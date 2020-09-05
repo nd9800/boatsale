@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Trang Chủ</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="public/fonts/fontawesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="public/css/app.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 <header id="header">
@@ -36,13 +36,15 @@
             <h1 class="text1">Your adventure starts here</h1>
             <h2 class="text2">Find and rent the perfect boat. Captain Optional</h2>
             <br><br>
-            <div class="main-search">
-                <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
-                    <div style="width: 100%">
+            <div class="container" style="padding: 0; margin-top: 0;">
+                <div class="homepage-item">
+                    <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
+                            <div style="width: 100%">
                     <span class="input-location">
                 <div class="input-group">
-                    <div class="input-pin ">
-                            <img class="pic1" src="public/img/pin.svg">
+                    <div class="input-pin">
+                            <img class="pic1" src="img/pin.svg">
                         <form action="#">
                             <input list="browsers" class="search1" name="browsers" placeholder="Destination">
                             <datalist id="browsers">
@@ -52,14 +54,14 @@
                             </datalist>
                         </form>
                     </div>
-                      <div id="datepicker" class="input-group date   "  data-date-format="dd-mm-yyyy">
-                          <img class="pic1" src="public/img/calendar.svg">
+                      <div id="datepicker" class="input-group date  "  data-date-format="dd-mm-yyyy">
+                          <img class="pic1" src="img/calendar.svg">
                        <input class="form-control" type="text" readonly="">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
-                    <div class="input-watch ">
+                    <div class="input-watch">
                 <form action="#">
-                    <img class="pic1" src="public/img/watch.svg">
+                    <img class="pic1" src="img/watch.svg">
                     <input  list="watchs" class="search2" name="Duration" placeholder="Duration">
           <datalist id="watchs">
                         <option value="Day Charter">Day Charter</option>
@@ -69,9 +71,9 @@
                     </form>
                 </div>
 
-                    <div class="input-number ">
+                    <div class="input-number">
                         <form action="#">
-                            <img class="pic1" src="public/img/passengers.svg">
+                            <img class="pic1" src="img/passengers.svg">
                         <select class="search3" name="human">
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -80,7 +82,7 @@
                         </select></form>
                     </div>
             <button type="submit" class="btn btn--bold" id="search">
-                        <img src="public/img/search.svg">
+                        <img src="img/search.svg">
                     </button>
 
 
@@ -88,68 +90,69 @@
 
 
                     </span>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-        <script>
-            $(document).ready(function () {
-                document.addEventListener('keypress',
-                    function (e) {
-                        var code = e.keyCode || e.which;
-                        if (code === 13) {
-                            $(".boat-form").submit();
+            <script>
+                $(document).ready(function () {
+                    document.addEventListener('keypress',
+                        function (e) {
+                            var code = e.keyCode || e.which;
+                            if (code === 13) {
+                                $(".boat-form").submit();
+                            }
                         }
-                    }
-                );
-                $(".close-notification").on("click", function (){
-                    $("#notification-bar").css("display", "none");
+                    );
+                    $(".close-notification").on("click", function (){
+                        $("#notification-bar").css("display", "none");
+                    });
                 });
-            });
-        </script>
-        <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","563969157730866");
-            fbq("set","agent","tmgoogletagmanager","563969157730866");fbq("track","PageView");</script>
-        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=563969157730866&amp;ev=PageView&amp;noscript=1"></noscript>
-        <script type="text/javascript" id="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","9aac5175-dc37-45dd-be28-57751e1b927f",{user_email:"undefined"});snaptr("track","PAGE_VIEW");</script>
-        <video autoplay="" loop="" id="video-background" width="100%" muted="" plays-inline="">
+            </script>
+            <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","563969157730866");
+                fbq("set","agent","tmgoogletagmanager","563969157730866");fbq("track","PageView");</script>
+            <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=563969157730866&amp;ev=PageView&amp;noscript=1"></noscript>
+            <script type="text/javascript" id="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","9aac5175-dc37-45dd-be28-57751e1b927f",{user_email:"undefined"});snaptr("track","PAGE_VIEW");</script>
+            <video autoplay="" loop="" id="video-background" width="100%" muted="" plays-inline="">
 
 
 
 
-            ﻿
+                ﻿
 
 
-            <style>
-                #header:before {
-                    background: url('https://pics.chartergenius.com/p/id_6293__b_0__ext_jpeg__w_1000/wok_-WjN_400x400%2Ejpg') center center no-repeat;
-                    background-size: cover;
-                }
-            </style>
-            <style>
-                #header:before {
-                    background: none !important;
-                }
+                <style>
+                    #header:before {
+                        background: url('https://pics.chartergenius.com/p/id_6293__b_0__ext_jpeg__w_1000/wok_-WjN_400x400%2Ejpg') center center no-repeat;
+                        background-size: cover;
+                    }
+                </style>
+                <style>
+                    #header:before {
+                        background: none !important;
+                    }
 
-                #header {
-                    background: none !important;
-                }
+                    #header {
+                        background: none !important;
+                    }
 
-                #video-background {
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    min-width: 100%;
-                    min-height: 100%;
-                    width: auto;
-                    height: auto;
-                    z-index: -100;
-                }
-            </style>
-            <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.av1.mp4?8rb6umielk" type="video/mp4; codecs=av01.0.05M.08">
-            <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h265.mp4?8rb6umielk" type="video/mp4; codecs=hevc">
-            <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.vp9.webm?8rb6umielk" type="video/webm; codecs=vp9">
-            <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h264.mp4?8rb6umielk" type="video/mp4; codecs=avc1.4D401E">
-        </video></div>
+                    #video-background {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: auto;
+                        height: auto;
+                        z-index: -100;
+                    }
+                </style>
+                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.av1.mp4?8rb6umielk" type="video/mp4; codecs=av01.0.05M.08">
+                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h265.mp4?8rb6umielk" type="video/mp4; codecs=hevc">
+                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.vp9.webm?8rb6umielk" type="video/webm; codecs=vp9">
+                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h264.mp4?8rb6umielk" type="video/mp4; codecs=avc1.4D401E">
+            </video></div>
     </div>
 </header>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -174,7 +177,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -184,7 +187,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -194,7 +197,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -204,7 +207,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -214,7 +217,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -224,7 +227,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -234,7 +237,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -244,13 +247,12 @@
         </div>
         <br>
         <div class="trends-list">
-            <div style="display: block; width: 100%;">
-                <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
+            <div style="display: block; width: 100%;"><h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
             </div>
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
                         <p class="text4">Cape Town</p>
                         <p class="text5">South Africa</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -260,7 +262,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
                         <p class="text4">Cape Town</p>
                         <p class="text5">South Africa</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -270,7 +272,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
                         <p class="text4">Cape Town</p>
                         <p class="text5">South Africa</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -280,7 +282,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
                         <p class="text4">Cape Town</p>
                         <p class="text5">South Africa</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -290,7 +292,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="public/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
                         <p class="text4">Cape Town</p>
                         <p class="text5">South Africa</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -306,7 +308,7 @@
                 <ul class="list">
                     <li class="col-md-4">
                         <div>
-                            <img class="pic3" src="public/img/search1.svg">
+                            <img class="pic3" src="img/search1.svg">
                         </div>
                         <h5>
                             Find the right boat rental for your trip
@@ -315,7 +317,7 @@
                     </li>
                     <li class="col-md-4">
                         <div>
-                            <img class="pic3" src="public/img/calendar1.svg">
+                            <img class="pic3" src="img/calendar1.svg">
                         </div>
                         <h5>
                             Book your boat rental and pay online
@@ -324,7 +326,7 @@
                     </li>
                     <li class="col-md-4">
                         <div >
-                            <img class="pic4" src="public/img/boat.svg">
+                            <img class="pic4" src="img/boat.svg">
                         </div>
                         <br>
                         <h5>

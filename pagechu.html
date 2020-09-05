@@ -36,12 +36,14 @@
         <h1 class="text1">Your adventure starts here</h1>
         <h2 class="text2">Find and rent the perfect boat. Captain Optional</h2>
         <br><br>
-        <div class="main-search">
+        <div class="container" style="padding: 0; margin-top: 0;">
+            <div class="homepage-item">
+        <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
                 <div style="width: 100%">
                     <span class="input-location">
                 <div class="input-group">
-                    <div class="input-pin ">
+                    <div class="input-pin">
                             <img class="pic1" src="public/img/pin.svg">
                         <form action="#">
                             <input list="browsers" class="search1" name="browsers" placeholder="Destination">
@@ -52,12 +54,12 @@
                             </datalist>
                         </form>
                     </div>
-                      <div id="datepicker" class="input-group date   "  data-date-format="dd-mm-yyyy">
+                      <div id="datepicker" class="input-group date  "  data-date-format="dd-mm-yyyy">
                           <img class="pic1" src="public/img/calendar.svg">
                        <input class="form-control" type="text" readonly="">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
-                    <div class="input-watch ">
+                    <div class="input-watch">
                 <form action="#">
                     <img class="pic1" src="public/img/watch.svg">
                     <input  list="watchs" class="search2" name="Duration" placeholder="Duration">
@@ -69,7 +71,7 @@
                     </form>
                 </div>
 
-                    <div class="input-number ">
+                    <div class="input-number">
                         <form action="#">
                             <img class="pic1" src="public/img/passengers.svg">
                         <select class="search3" name="human">
@@ -92,6 +94,7 @@
             </form>
     </div>
     </div>
+        </div>
 <script>
     $(document).ready(function () {
         document.addEventListener('keypress',
