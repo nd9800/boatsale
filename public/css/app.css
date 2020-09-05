@@ -1,0 +1,362 @@
+body{
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.header{
+    margin-top: 2%;
+    padding-left: -5%;
+    padding-right: -5%;
+
+}
+#header {
+    padding-bottom:50px
+}
+.container{
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 100px;
+    background: inherit;
+    height: inherit;
+
+}
+
+.desktop-logo{
+    width: 250px;
+    height: 80px;
+    float: left;
+    margin-left: 2%;
+}
+.rightbox{
+    margin-top: 1%;
+    float: right;
+    right: 20px;
+    display: flex;
+}
+.nphone{
+    list-style: none;
+    font-size: 150%;
+    color: white;
+    margin-right: 20px;
+
+}
+.nphone:hover{
+    text-decoration: none;
+    color: white;
+}
+.but{
+    text-align: center;
+    margin-right: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 150%;
+}
+.header{
+    padding: -50px;
+}
+.text1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 400%;
+    color: white;
+}
+.text2{
+    text-align: center;
+    color: white;
+}
+.main-search{
+    background: #fff;
+    padding: 20px;
+    display: block;
+    box-shadow: 0 2px 8px 0 rgba(21,39,75,.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.wth{
+    margin-left: calc(20% - 20px);
+    margin-right: calc(20% - 20px);
+}
+.input-pin{
+   border: solid 1px black;
+    border-radius: 5px;
+    float: left;
+}
+.search1{
+  border:0px white;
+    list-style: none;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    outline: none;
+    width: auto;
+}
+
+.pic1{
+    margin-left: 5px;
+    padding: 5px;
+}
+#datepicker{
+    margin-left: 5px;
+    margin-right: 0px;
+    border: solid 1px black;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    float: right;
+    top: 0px;
+    outline: none;
+    list-style: none;
+}
+#datepicker:hover{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+.input-watch{
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-left: 5px;
+    float: right;
+}
+.search2{
+    border:0px white;
+    list-style: none;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    outline: none;
+    width: 160px;
+    padding-top: 5px;
+}
+.input-number{
+    border: solid 1px black;
+    border-radius: 5px;
+    margin-left: 5px;
+    float: right;
+}
+.search3{
+    border:0px white;
+    list-style: none;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    outline: none;
+    width: 50px;
+    padding-top: 5px;
+}
+#search{
+    float: right;
+    width: 60px;
+    height: 40px;
+    margin-left: 5px;
+    background: dodgerblue;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+}
+.homepage-item{
+    top: 500px;
+}
+.text3{
+    color: black;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 200px;
+}
+a{
+    text-decoration: none!important;
+
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    float: left;
+    margin-top: 0px;
+}
+.link{
+    margin-top: 30px;
+}
+.box{
+    width: 350px;
+    height: 300px;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.pic2{
+    width: 350px;
+    height: 300px;
+    max-width: 100%;
+}
+.text4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0 3px 11px rgba(0,0,0,.92);
+    font-family: 'Avenir Next',sans-serif;
+    font-style: normal;
+    position: absolute;
+    margin-left: 5px;
+    top: calc(100% - 120px);
+
+}
+.text5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0 3px 11px rgba(0,0,0,.92);
+    font-family: 'Avenir Next',sans-serif;
+    font-style: normal;
+    position: absolute;
+    margin-left: 5px;
+    top: calc(100% - 80px);
+}
+.text6{
+    color: whitesmoke;
+    background: #2b669a;
+    border-radius: 3px;
+    margin-left: 5px;
+    padding: 5px;
+    position: absolute;
+    top: calc(100% - 50px)
+}
+.trends-list{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.list{
+    list-style: none;
+}
+.pic3{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+li{
+    float: left;
+}
+.pic4{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.inquiry_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn {
+    background: #0751c2;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+}
+
+footer img {
+    width: 65%;
+}
+.socialmedia{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    height: 20px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+}
+footer{
+   background: #f6f8f9;
+}
+footer a{
+    margin-right: 5px;
+}
+footer.container{
+    width: 100%;
+}
+.text7{
+    color: #b4b4b4;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    display: block;
+    font-size: 13px;
+}
+footer h3{
+    margin: 0 0 16px;
+    padding: 0;
+    line-height: 1.333333;
+    font-weight: 500;
+    font-size: 19px;
+    color: #333
+}
+.col-md-4{
+    text-align: center;
+}
+.col-sm-3 {
+    width: 25%;
+    float: left;
+}
+footer ul li{
+    left: 0;
+    padding: 0;
+    margin: 0 0 4px;
+    text-align: -webkit-match-parent;
+}
+footer ul{
+    list-style-type:none;
+    padding: 0;
+    height: 100%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: block;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, ol, p, ul {
+    list-style-type: none;
+    border: 0;
+}
+.click1{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
