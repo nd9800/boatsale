@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Trang Chủ</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<meta charset="UTF-8">
+<title>Trang Chủ</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
+<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 <header id="header">
     <div class="header">
-        <a href="#" id="logo" title="Boatsetter" alt="Boatsetter">
-            <div class="homepageleader">
-                <div class="desktop-logo">
-                    <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/logo-bs.svg?e2adjmklu9">
-                </div></div>
-        </a>
-        <nav id="site" class="rightbox">
-            <a  class="nphone" href="#">
-                <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/gfx/phone.svg?e2adjmklu9">
-                <span> +1 (954) 715-4114 </span>
+        <div class="homepage-item" style="padding: 15px 15px 15px 0">
+            <a href="#" id="logo" title="Boatsetter" alt="Boatsetter">
+                <div class="homepageleader">
+                    <div class="desktop-logo">
+                        <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/logo-bs.svg?e2adjmklu9">
+                    </div></div>
             </a>
-            <form class="localform">
-                <div class="box1">
-                    <button class="but">
-                        <span>EN</span>
-                    </button>
-                    <button class="but">
-                        <span>USD$</span>
-                    </button></div>
-            </form>
-        </nav>
-        <br><br><br>
-        <div class="wth">
-            <h1 class="text1">Your adventure starts here</h1>
-            <h2 class="text2">Find and rent the perfect boat. Captain Optional</h2>
-            <br><br>
-            <div class="container" style="padding: 0; margin-top: 0;">
-                <div class="homepage-item">
-                    <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
-                            <div style="width: 100%">
+            <nav id="site" class="rightbox">
+                <a  class="nphone" href="#">
+                    <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/gfx/phone.svg?e2adjmklu9">
+                    <span> +1 (954) 715-4114 </span>
+                </a>
+                <form class="localform">
+                    <div class="box1">
+                        <button class="but">
+                            <span>EN</span>
+                        </button>
+                        <button class="but">
+                            <span>USD$</span>
+                        </button></div>
+                </form>
+            </nav>
+            <br><br><br>
+            <div class="wth">
+                <h1 class="text1">Your adventure starts here</h1>
+                <h2 class="text2">Find and rent the perfect boat. Captain Optional</h2>
+                <br><br>
+                <div class="container" style="padding: 0; margin-top: 0;">
+                    <div class="homepage-item">
+                        <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
+                                <div style="width: 100%">
                     <span class="input-location">
                 <div class="input-group">
                     <div class="input-pin">
@@ -87,74 +87,76 @@
 
 
                </div>
-
-
                     </span>
-                            </div>
-                        </form>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            <script>
-                $(document).ready(function () {
-                    document.addEventListener('keypress',
-                        function (e) {
-                            var code = e.keyCode || e.which;
-                            if (code === 13) {
-                                $(".boat-form").submit();
-                            }
-                        }
-                    );
-                    $(".close-notification").on("click", function (){
-                        $("#notification-bar").css("display", "none");
-                    });
-                });
-            </script>
-            <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","563969157730866");
-                fbq("set","agent","tmgoogletagmanager","563969157730866");fbq("track","PageView");</script>
-            <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=563969157730866&amp;ev=PageView&amp;noscript=1"></noscript>
-            <script type="text/javascript" id="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","9aac5175-dc37-45dd-be28-57751e1b927f",{user_email:"undefined"});snaptr("track","PAGE_VIEW");</script>
-            <video autoplay="" loop="" id="video-background" width="100%" muted="" plays-inline="">
-
-
-
-
-                ﻿
-
-
-                <style>
-                    #header:before {
-                        background: url('https://pics.chartergenius.com/p/id_6293__b_0__ext_jpeg__w_1000/wok_-WjN_400x400%2Ejpg') center center no-repeat;
-                        background-size: cover;
-                    }
-                </style>
-                <style>
-                    #header:before {
-                        background: none !important;
-                    }
-
-                    #header {
-                        background: none !important;
-                    }
-
-                    #video-background {
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        min-width: 100%;
-                        min-height: 100%;
-                        width: auto;
-                        height: auto;
-                        z-index: -100;
-                    }
-                </style>
-                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.av1.mp4?8rb6umielk" type="video/mp4; codecs=av01.0.05M.08">
-                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h265.mp4?8rb6umielk" type="video/mp4; codecs=hevc">
-                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.vp9.webm?8rb6umielk" type="video/webm; codecs=vp9">
-                <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h264.mp4?8rb6umielk" type="video/mp4; codecs=avc1.4D401E">
-            </video></div>
+        </div>
+    </div>
     </div>
 </header>
+<div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.8608871013533712"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6816321685169271" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=26146940&amp;Ver=2&amp;mid=faa5eff8-16d4-a980-ad7b-a88b76d229e5&amp;sid=58721a29be654569065f529d8f94c2ae&amp;vid=a6c7df1d0ca2b04815aa34c54d36bbc9&amp;vids=0&amp;pi=-1079132682&amp;lg=vi-VN&amp;sw=2560&amp;sh=1440&amp;sc=24&amp;tl=Boat%20Rentals,%20Charter%20Boat%20Rentals,%20Yacht%20Rentals%20on%20Boatsetter&amp;p=https%3A%2F%2Fglobal.boatsetter.com%2Fen&amp;r=https%3A%2F%2Fglobal.boatsetter.com%2Fen%2Fmarketplace%2Fboats%2Fmoss-town&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=812163"></div>
+<script>
+    $(document).ready(function () {
+        document.addEventListener('keypress',
+            function (e) {
+                var code = e.keyCode || e.which;
+                if (code === 13) {
+                    $(".boat-form").submit();
+                }
+            }
+        );
+        $(".close-notification").on("click", function (){
+            $("#notification-bar").css("display", "none");
+        });
+    });
+</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","563969157730866");
+    fbq("set","agent","tmgoogletagmanager","563969157730866");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=563969157730866&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","9aac5175-dc37-45dd-be28-57751e1b927f",{user_email:"undefined"});snaptr("track","PAGE_VIEW");</script>
+<video class="example" autoplay="" loop="" id="video-background" width="100%" muted="" plays-inline="">
+
+
+
+
+    ﻿
+
+
+    <style>
+        #header:before {
+            background: url('https://pics.chartergenius.com/p/id_6293__b_0__ext_jpeg__w_1000/wok_-WjN_400x400%2Ejpg') center center no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <style>
+        #header:before {
+            background: none !important;
+        }
+
+        #header {
+            background: none !important;
+        }
+
+        #video-background {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+        }
+    </style>
+    <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.av1.mp4?8rb6umielk" type="video/mp4; codecs=av01.0.05M.08">
+    <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h265.mp4?8rb6umielk" type="video/mp4; codecs=hevc">
+    <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.vp9.webm?8rb6umielk" type="video/webm; codecs=vp9">
+    <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h264.mp4?8rb6umielk" type="video/mp4; codecs=avc1.4D401E">
+</video>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
@@ -166,7 +168,7 @@
         }).datepicker('update', new Date());
     });
 </script>
-<section>
+<div class="homepage-item" style="margin-top: calc(40% - 10px) ">
     <div class="container">
         <h3 class="text3">Featured destinations</h3>
         <br><br>
@@ -207,7 +209,7 @@
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
                     <div class="item">
-                        <img class="pic2" src="/img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
+                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
                         <p class="text4">Amalfi</p>
                         <p class="text5">Italy</p>
                         <p class="text6">FIND BOAT RENTALS</p>
@@ -247,7 +249,8 @@
         </div>
         <br>
         <div class="trends-list">
-            <div style="display: block; width: 100%;"><h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
+            <div style="display: block; width: 100%;">
+                <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
             </div>
             <a href="#" class="link">
                 <div class="box col-md-3 col-sm-4 col-xs-12">
@@ -344,7 +347,7 @@
         <script id="embender" data-url="https://booking.chartergenius.com//en/p/boatsetter/widget/home/inquiry" data-culture="en-US" src="https://d17nxorp0ub7gm.cloudfront.net/Frontend/dist/js/embed-enquiry.js">
         </script>
     </div>
-</section>
+</>
 <footer>
     <div class="container">
         <div class="trends-list">
