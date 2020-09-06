@@ -66,73 +66,7 @@ function processFile(contentString) {
         }) 
           
   });
-
+  router.post('/cart',(req,res) =>{
+      res.redirect('/cart')
+  })
 module.exports = router;
-
-  // fs.readFile('data.json', 'utf-8',function (err, data) {
-  //   if (err) {
-  //       throw err;
-  //   }
-
-  //   let contentString = data;
-  //   let contentJson =  processFile(contentString)
-  //        router.get('/:id',(req,res) =>{
-  //         let currentPage = req.params.id
-  //         console.log(currentPage);
-  //         let postsPerPage = 10;
-  //         let indexOfLastPost = currentPage * postsPerPage;
-  //         let indexOfFirstPost =  indexOfLastPost - postsPerPage;
-  //         let totalPage =  Math.ceil(contentJson.length/postsPerPage) 
-  //         let currentPost = contentJson.slice(indexOfFirstPost,indexOfLastPost);
-  //         // res.render('filter',{
-  //         //   product:currentPost,
-  //         //   page:totalPage,
-  //         //   currentPages:currentPage
-  //         // })
-       
-  //         res.render('search',{
-  //           product:currentPost,
-  //           page:totalPage,
-  //           currentPages:currentPage
-  //         }) }) 
-  // });
-
-       //  let query = req.query.name;  
- 
-          // res.render('oninputonchange',{
-          //   product:currentPost,
-          //   page:totalPage,
-          //   currentPages:currentPage,
-         //   querys:query
-          // })
-
-
-  //   app.get('/test.js', function(req, res) {
-//     res.set('Content-Type', 'application/javascript');
-//     res.render('testPage', { myVar : currentPost });
-// });
-
-// First I want to read the file;
- 
-// fs.readFile('data.json', 'utf-8',function (err, data) {
-//   if (err) {
-//       throw err;
-//   }
- 
-//   let posts = [];
-//   let loading = false;
-//   let currentPage = 1;
-//   let postsPerPage = 10;
-//   let indexOfLastPost = currentPage * postsPerPage;
-//   let indexOfFirstPost =  indexOfLastPost - postsPerPage
-//   let contentString = data;
-//   let contentJson =  processFile(contentString)
-//       posts = contentJson
-//   let currentPost = posts.slice(indexOfFirstPost,indexOfLastPost);
-//   let totalPage =  Math.ceil(posts.length/postsPerPage)
-//        router.get('/',(req,res) =>{
-//         res.render('filter',{
-//           total:currentPost,
-//           page:totalPage
-//         })}) 
-// });
