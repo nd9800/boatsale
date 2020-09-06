@@ -76,6 +76,15 @@ form{
     text-indent: 30px;
 
 }
+.wth select
+{
+    height:40px;
+    border-radius:5px;
+    border:none;
+    text-indent: 25px;
+    width:130px;
+    color:rgba(0,0,0,.6);
+}
 .wth button
 {
     height:40px;
@@ -233,5 +242,9 @@ img
 {
     color:#0a53c3;
 }
+select option
+{
+   border-radius: 5px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 
-
+}
