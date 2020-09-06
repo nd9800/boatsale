@@ -1,4 +1,5 @@
 const express = require("express");
+const { Router } = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -16,8 +17,9 @@ app.use(express.static("public"));
 //});
 //config sử dụng ejs
 app.set("view engine","ejs");
+app.set('views','./views');
 //config connect MSSQL
-const mssql = require("mssql");
+// const mssql = require("mssql");
 //const config = {
 //  user: 'quanghoa',
 //password: 'Studentaptech123',
@@ -28,10 +30,10 @@ const mssql = require("mssql");
 // enableArithAbort: true
 //}
 //}
-mssql.connect(config,function (err){
-    if(err) console.log(err);
-    else console.log("connect db thành công");
-});
-app.get("/",function (req,res){
-    res.render("linh");
-})
+// mssql.connect(config,function (err){
+//     if(err) console.log(err);
+//     else console.log("connect db thành công");
+// });
+
+app.use('/',require('./routes/linh'));  
+app.use('/',require('./routes/marketplace'));
