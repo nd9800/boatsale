@@ -3,10 +3,10 @@ const { Router } = require("express");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-//Tạo sever
+//Tạo server
 
 app.listen(PORT,function (){
-    console.log("sever is running...")
+    console.log("server is running...")
 });
 //config các file static
 app.use(express.static("public"));
@@ -37,3 +37,6 @@ app.set('views','./views');
 
 app.use('/',require('./routes/linh'));  
 app.use('/',require('./routes/marketplace'));
+app.use('/',require('./routes/cart'));
+
+
