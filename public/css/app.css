@@ -461,3 +461,50 @@ footer ul{
     margin-inline-end: 0px;
     display: block;
 }
+.footer img
+{
+    width:65%
+}
+.footer {
+    background: #f6f8f9;
+    padding: 50px 0;
+    font-size: 15px;
+}
+.footer li
+{
+    list-style:none;
+    margin-bottom: 5px;
+}
+.socialmedia li{
+    display:inline-block;
+    list-style:none;
+    margin:15px 2px 8px 2px;
+    font-size:15px;
+}
+.footer h3
+{
+    margin-top:5px;
+    font-size:18px;
+}
+.footer a{
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+.footer a:hover
+{
+    color: rgb(21, 21, 41);
+}
+.footer i
+{
+    color:#0a53c3;
+}
+select option
+{
+    border-radius: 5px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+}
+.img-responsive{
+    width: 100%;
+}
+
