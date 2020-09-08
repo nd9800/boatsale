@@ -261,7 +261,6 @@ a{
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
 }
 .list{
     list-style: none;

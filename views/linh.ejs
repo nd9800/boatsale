@@ -9,14 +9,14 @@
 <body>
 <header id="header">
     <div class="header">
-        <div class="homepage-item" style="padding: 15px 15px 15px 0">
+        <div class="homepage-item" style="padding: 0px 15px 15px 0">
             <a href="#" id="logo" title="Boatsetter" alt="Boatsetter">
-                <div class="homepageleader">
-                    <div class="desktop-logo">
+                <div class="homepageleader" style="padding-top: 0px">
+                    <div class="desktop-logo" >
                         <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/logo-bs.svg?e2adjmklu9">
                     </div></div>
             </a>
-            <nav id="site" class="rightbox">
+            <nav id="site" class="rightbox" style="padding-top: 10px">
                 <a  class="nphone" href="#">
                     <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/gfx/phone.svg?e2adjmklu9">
                     <span> +1 (954) 715-4114 </span>
@@ -171,7 +171,7 @@
 <div class="homepage-item" style="margin-top: calc(20% - 10px) ">
     <div class="container">
         <h3 class="text3" style="text-align: center">Featured destinations</h3>
-        <div class="row">
+        <div class="row" style="margin-left: auto;margin-right: auto">
         <br><br>
         <div class="trends-list">
             <div style="display: block; width: 100%;">
@@ -179,7 +179,7 @@
             </div>
             <% med.map(function (v){ %>
                 <a href="/location" class="link">
-                    <div class="box col-md-3 col-sm-4 col-xs-12">
+                    <div class="box col-md-4 col-sm-6 col-xs-12">
                         <div class="item">
                             <img class="pic2" src="<%= v.DestinationPhoto %>">
                             <p class="text4"><%= v.DestinationName %></p>
@@ -197,7 +197,7 @@
             </div>
             <% rest.map(function (v){ %>
                 <a href="/location" class="link">
-                    <div class="box col-md-3 col-sm-4 col-xs-12">
+                    <div class="box col-md-4 col-sm-6 col-xs-12">
                         <div class="item">
                             <img class="pic2" src="<%= v.DestinationPhoto %>">
                             <p class="text4"><%= v.DestinationName %></p>
@@ -214,7 +214,7 @@
             </div>
             <% car.map(function (v){ %>
                 <a href="/location" class="link">
-                    <div class="box col-md-3 col-sm-4 col-xs-12">
+                    <div class="box col-md-4 col-sm-6 col-xs-12">
                         <div class="item">
                             <img class="pic2" src="<%= v.DestinationPhoto %>">
                             <p class="text4"><%= v.DestinationName %></p>
