@@ -1,13 +1,10 @@
 *
 {
     padding:0;
+
 }
-
-
-
-.section
-{
-    margin-top:20px;
+body{
+    font-family: 'Nunito', sans-serif;
 }
 #header {
     width: 100%;
@@ -58,7 +55,13 @@ body{
 }
 .infopage__floating
 {
-    margin-top:40px;
+    margin-top:20px;
+}
+.infopage__floating h2
+{
+    text-align:center;
+    font-style:italic;
+    opacity:0.8;
 }
 .main-content
 {
@@ -79,34 +82,12 @@ body{
 {
     height:40px;
 }
-.btn {
-    background: #0751c2;
-    color: #fff;
-    text-align: center;
-    border: 0;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 12px 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    width:180px;
-    font-size:25px;
-    font-weight:600;
-}
+
 textarea
 {
     resize: vertical;
 }
-.cart-title
-{
-    color: rgb(21, 21, 41);
-}
-.btn:hover
-{
-    opacity:0.8;
-    color:#fff;
-    background: #012a5d;
-}
+
 textarea
 {
     border:1px solid rgba(0,0,0,.2);
@@ -123,49 +104,7 @@ textarea::placeholder
 }
 #phone
 {
-
-    width:360px;
-}
-.cart-title
-{
-    text-align: center;
-    font-weight: 500;
-    font-size: 29px;
-    padding: 20px 0 25px;
-}
-.bookingpage__floating h3
-{
-    font-weight: 300;
-    font-size: 16px;
-    padding: 12px 0;
-    color: #999;
-    text-align: center;
-}
-img
-{
-    vertical-align: middle;
-}
-.bookingpage__floating {
-    z-index: 9;
-    margin-top:40px;
-    padding: 0 30px 20px;
-    border-radius: 4px;
-    color: #000;
-    border: solid 1px #dadedf;
-    border-top: 3px solid #0751c2;
-    background-color: #fff;
-    font-size:20px;
-}
-.booking-totals-summary-container {
-    position: relative;
-    padding: 0 21px;
-}
-.notice
-{
-    font-size: 15px;
-    text-align:center;
-    font-style:italic;
-    padding-top:5px;
+width:385px;
 }
 .footer img
 {
