@@ -2,31 +2,12 @@
 {
     padding:0;
 }
-#header:before {
-    content: '';
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    opacity: 0;
-    position: absolute;
-    z-index: 0;
-}
-#header .container {
-    padding: inherit;
-    align-items: center;
 
-}
-.phone
-{
-    padding-top:23px;
-    font-size:25px;
-}
+
 
 .section
 {
-    margin-top:100px;
+    margin-top:20px;
 }
 #header {
     width: 100%;
@@ -64,39 +45,12 @@
     outline: 0!important;
     color: #31b2f0;
 }
-.wth{
-    padding-top:20px;
-}
-.wth li{
-    display:inline-block;
-    list-style:none;
-    margin-right:5px;
-}
-form{
-    color:black;
-}
-.wth input
+.select-box
 {
     height:40px;
-    border-radius:5px;
-    border:none;
-    width:130px;
-    text-indent: 30px;
-
-}
-.wth select
-{
-    height:40px;
-    border-radius:5px;
-    border:none;
-    text-indent: 25px;
-    width:130px;
-    color:rgba(0,0,0,.6);
-}
-.wth button
-{
-    height:40px;
-    width:50px;
+    width:40px;
+    border-radius: 10px;
+    margin-left:10px;
 }
 
 body{
