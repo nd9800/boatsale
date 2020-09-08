@@ -1,23 +1,29 @@
 const express = require("express");
 const { Router } = require("express");
 const app = express();
-const PORT = process.env.PORT || 5000;
+// thư viện này giúp  layout ngắn hơn đỡ lặp code
+const expressLayouts = require('express-ejs-layouts');
 
-//Tạo server
-
-app.listen(PORT,function (){
-    console.log("server is running...")
-});
 //config các file static
 app.use(express.static("public"));
+// rút ngắn đường link 
+app.use(express.static(__dirname+'public/css'));
+app.use(express.static(__dirname+'public/js'));
+app.use(express.static(__dirname+'public/img'));
 
-//app.get("/",function (req,res) {
-//res.send("Đây là trang chủ!");
 
-//});
+
 //config sử dụng ejs
 app.set("view engine","ejs");
 app.set('views','./views');
+
+// sử dụng thư viện express-ejs-layouts
+app.use(expressLayouts);
+
+// layout chính của trang
+app.set('layout','./layout/layout');
+
+
 //config connect MSSQL
 // const mssql = require("mssql");
 //const config = {
@@ -39,4 +45,10 @@ app.use('/',require('./routes/linh'));
 app.use('/',require('./routes/marketplace'));
 app.use('/',require('./routes/cart'));
 
+const PORT = process.env.PORT || 5000;
 
+//Tạo server
+
+app.listen(PORT,function (){
+    console.log("server is running...")
+});
