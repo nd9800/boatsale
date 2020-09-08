@@ -56,7 +56,7 @@
                     </div>
                       <div id="datepicker" class="input-group date  "  data-date-format="dd-mm-yyyy">
                           <img class="pic1" src="img/calendar.svg">
-                       <input class="form-control" type="text" readonly="">
+                       <input class="form-control" type="date" placeholder="Date" readonly="">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
                     <div class="input-watch">
@@ -176,132 +176,53 @@
             <div style="display: block; width: 100%;">
                 <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Mediterranean</h4>
             </div>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
+            <% med.map(function (v){ %>
+                <a href="/location" class="link">
+                    <div class="box col-md-3 col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img class="pic2" src="<%= v.DestinationPhoto %>">
+                            <p class="text4"><%= v.DestinationName %></p>
+                            <p class="text5"><%= v.DestinationCountry %></p>
+                            <p class="text6">FIND BOAT RENTALS</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            <% }) %>
         </div>
         <br>
         <div class="trends-list">
             <div style="display: block; width: 100%;">
                 <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
             </div>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
+            <% rest.map(function (v){ %>
+                <a href="/location" class="link">
+                    <div class="box col-md-3 col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img class="pic2" src="<%= v.DestinationPhoto %>">
+                            <p class="text4"><%= v.DestinationName %></p>
+                            <p class="text5"><%= v.DestinationCountry %></p>
+                            <p class="text6">FIND BOAT RENTALS</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
+                </a>
+            <% }) %>
+        </div>
+        <div class="trends-list">
+            <div style="display: block; width: 100%;">
+                <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">The Caribbean</h4>
+            </div>
+            <% car.map(function (v){ %>
+                <a href="/location" class="link">
+                    <div class="box col-md-3 col-sm-4 col-xs-12">
+                        <div class="item">
+                            <img class="pic2" src="<%= v.DestinationPhoto %>">
+                            <p class="text4"><%= v.DestinationName %></p>
+                            <p class="text5"><%= v.DestinationCountry %></p>
+                            <p class="text6">FIND BOAT RENTALS</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            <% }) %>
         </div>
         <div class="homepage-item" style="margin-top: 5%">
             <h3 class="text3">How Boatsetter Works</h3>
@@ -347,7 +268,7 @@
         <script id="embender" data-url="https://booking.chartergenius.com//en/p/boatsetter/widget/home/inquiry" data-culture="en-US" src="https://d17nxorp0ub7gm.cloudfront.net/Frontend/dist/js/embed-enquiry.js">
         </script>
     </div>
-</>
+</div>>
 <footer>
     <div class="container">
         <div class="trends-list">
