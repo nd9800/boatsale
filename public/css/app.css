@@ -42,7 +42,7 @@ body{
     width: 250px;
     height: 80px;
     float: left;
-    margin-left: 2%;
+    margin-left: 1%;
 }
 .rightbox{
     margin-top: 1%;
@@ -76,11 +76,11 @@ body{
     margin-top: 100px;
     text-align: center;
     font-size: 350%;
-    color: white;
+    color: lightgray;
 }
 .text2{
     text-align: center;
-    color: white;
+    color: lightgray;
 }
 .main-search{
     background: #fff;
@@ -116,7 +116,7 @@ body{
     padding-top: 5px;
 }
 .desktop-logo {
-    padding: 16px 0;
+    padding: 0px;
     display: inline-block;
     height: 80px;
     width: 250px;
@@ -258,6 +258,8 @@ a{
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .list{
     list-style: none;
@@ -419,4 +421,10 @@ select option
 }
 .img-responsive{
     width: 100%;
+}
+.itemhead{
+    height: 80px;
+    border: black;
+    back: 1;
+
 }
