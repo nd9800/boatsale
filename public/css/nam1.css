@@ -46,6 +46,9 @@ body{
 .infopage__floating
 {
     margin-top:60px;
+    background-color: white;
+    padding:40px 30px;
+    border-radius: 10px;
 }
 .infopage__floating h2
 {
@@ -96,7 +99,7 @@ textarea::placeholder
 }
 #phone
 {
-width:385px;
+width:370px;
 }
 /*Footer*/
 .footer img
@@ -104,8 +107,9 @@ width:385px;
     width:65%
 }
 .footer {
-    background: #f6f8f9;
-    padding: 50px 0;
+    background-color: white;
+    margin-top: 80px;
+    padding:40px 0;
     font-size: 15px;
     font-weight: 400;
 }
@@ -157,6 +161,9 @@ textarea:focus, input:focus {
 .main-terms
 {
     color:#17233c;
+    background-color:white;
+    padding:30px;
+    border-radius: 10px;
 }
 .main-terms p
 {
