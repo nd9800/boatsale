@@ -45,6 +45,7 @@ app.use('/',require('./routes/linh'));
 app.use('/',require('./routes/marketplace'));
 app.use('/',require('./routes/cart'));
 app.use('/',require('./routes/terms'));
+app.use('/',require('./routes/request-complete'));
 
 const PORT = process.env.PORT || 5000;
 
