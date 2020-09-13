@@ -44,13 +44,23 @@ body{
 
 
 /*Main*/
-
+.main-box
+{
+    margin-top:20px;
+}
 .infopage__floating
 {
-    margin-top:60px;
     background-color: white;
     padding:40px ;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
+.infopage__floating h1
+{
+    text-align:center;
+    font-weight:300;
+    padding-bottom:20px;
 }
 .infopage__floating h2
 {
@@ -110,6 +120,47 @@ textarea::placeholder
     margin-top:60px;
     line-height: 2;
     padding-bottom: 50px;
+}
+.info-nav
+{
+    background-color: white;
+    padding:40px 20px ;
+    border: 1px solid #e0e0e0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left:none;
+
+}
+.info-nav img
+{
+    width:80%;
+    margin:0 auto;
+}
+
+.info-nav > .title
+{
+    font-weight: 300;
+    font-size:25px;
+}
+.location
+{
+    padding-top:20px;
+    font-size:15px;
+    color: #aeaeae;
+}
+.menu-nav
+{
+    margin:10px auto;
+    padding:0 20px 20px 0;
+    color: rgb(21, 21, 41);
+    border-bottom: 1px solid #e0e0e0;
+
+}
+.menu-nav p
+{
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size:15px;
 }
 /*Footer*/
 .footer img
@@ -186,6 +237,7 @@ textarea:focus, input:focus {
     padding:0;
     color:#17233c;
 }
+
 .main-terms h6
 {
     padding-bottom: 20px;
