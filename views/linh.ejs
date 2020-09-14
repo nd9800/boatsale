@@ -43,8 +43,7 @@
                 <div class="container" style="padding: 0; margin-top: 0;">
                     <div class="homepage-item">
                         <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
-                                <div style="width: 100%">
+                            <form action="/en/p/boatsetter/marketplace/boats" autocomplete="off" class="boat-form store-form" data-action="/en/p/boatsetter/marketplace/data/getboats" data-method="POST" method="get">
                     <span class="input-location">
                         <div class="input-group">
                     <div style="text-align: center;padding-top: 2px" class="input-pin">
@@ -407,16 +406,15 @@
 <input data-toggle="datepicker" class="form-control search1" style="padding-top: 3px" type="text" method="get" placeholder="Date" />                          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
                     <div class="input-watch">
-                <form action="#">
                      <div class="input-group">
                     <img class="pic1" src="img/watch.svg">
                     <select Title="Duration" class="search2" data-allow-clear="true" id="Duration" name="Duration" placeholder="Duration" tags="true">
-                                    <option value="" disabled selected style="display:none">Duration</option>
+                                    <option value disabled selected style="display:none">Duration</option>
                                     <option value='DayCharter'> Day Charter</option>
                                     <option value='MultiDayCharter'>Multi-Day Charter</option>
                                     <option value='WeekCharter'> Week Charter</option>
                                 </select>
-                     </div>   </form>
+                     </div>
                 </div>
 
                     <div class="input-number">
