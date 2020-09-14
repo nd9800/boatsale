@@ -66,7 +66,7 @@ function processFile(contentString) {
         }) 
           
   });
-  router.post('/cart',(req,res) =>{
-      res.redirect('/cart')
+  router.post('/request',(req,res) =>{
+      res.redirect('/request')
   })
 module.exports = router;
