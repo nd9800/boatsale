@@ -21,7 +21,7 @@
                     </div></div>
             </a>
             <nav id="site" class="rightbox" style="padding-top: 15px">
-                <a  class="nphone" href="#">
+                <a  class="nphone" href="tel:+1 (954) 715-4114">
                     <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/gfx/phone.svg?e2adjmklu9">
                     <span style="color: white"> +1 (954) 715-4114 </span>
                 </a>
@@ -46,8 +46,8 @@
                             <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
                                 <div style="width: 100%">
                     <span class="input-location">
-                <div class="input-group">
-                    <div class="input-pin">
+                        <div class="input-group">
+                    <div style="text-align: center;padding-top: 2px" class="input-pin">
                             <img class="pic1" src="img/pin.svg">
                         <form action="#">
                             <select class="search1" data-val="true" data-val-number="The field LocationId must be a number." data-val-required="The LocationId field is required." id="locationId" name="LocationId" placeholder="Destination" required="required">
@@ -402,12 +402,13 @@
                             </select>
                         </form>
                     </div>
-                      <div id="datepicker" class="input-group" style="width:160px"  >
+                      <div id="datepicker" class="input-group" style="width:160px;border: solid thin lightgray"  >
                           <img class="pic1" src="img/calendar.svg">
 <input data-toggle="datepicker" class="form-control search1" style="padding-top: 3px" type="text" method="get" placeholder="Date" />                          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
                     <div class="input-watch">
                 <form action="#">
+                     <div class="input-group">
                     <img class="pic1" src="img/watch.svg">
                     <select Title="Duration" class="search2" data-allow-clear="true" id="Duration" name="Duration" placeholder="Duration" tags="true">
                                     <option value="" disabled selected style="display:none">Duration</option>
@@ -415,19 +416,14 @@
                                     <option value='MultiDayCharter'>Multi-Day Charter</option>
                                     <option value='WeekCharter'> Week Charter</option>
                                 </select>
-                    </form>
+                     </div>   </form>
                 </div>
 
                     <div class="input-number">
-                        <form action="#">
-                            <img class="pic1" src="img/passengers.svg">
-                        <select class="search3" name="human">
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="13+">13+</option>
-
-                        </select></form>
-                    </div>
+                            <div class="input-group">
+                                <img class="pic1" src="img/passengers.svg">
+                                <select style="border: none" Title="2" class="form-control icn icn--passengers" data-allow-clear="true" id="PassengerCountMin" name="PassengerCountMin" tags="true"><option value='2'selected='selected'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='14'>13+ </option></select>
+                    </div></div>
             <button type="submit" class="btn btn--bold" id="search">
                         <img src="img/search.svg">
                     </button>
