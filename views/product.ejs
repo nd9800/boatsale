@@ -1,23 +1,23 @@
 <div class="owl-carousel owl-theme">
-<div class="item" ><img src="/img/toan/duthuyen1.png 304w"></div>
-<div class="item" ><img src="/img/toan/duthuyen2.png"></div>
-<div class="item" ><img src="/img/toan/duthuyen3.png"></div>
-<div class="item" ><img src="/img/toan/duthuyen4.png"></div>
-<div class="item" ><img src="/img/toan/duthuyen5.png 304w"></div>
-<div class="item" ><img src="/img/toan/duthuyen.png"></div>
+<div class="item" ><img src="<%=img[0].Boat_Image_1%>"></div>
+<div class="item" ><img src="<%=img[0].Boat_Image_2%>"></div>
+<div class="item" ><img src="<%=img[0].Boat_Image_3%>"></div>
+<div class="item" ><img src="<%=img[0].Boat_Image_4%>"></div>
+<div class="item" ><img src="<%=img[0].Boat_Image_5%>"></div>
+<div class="item" ><img src="<%=img[0].Boat_Image_6%>"></div>
 </div>
 <div class="boat-detail">
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-sm-12 col-xs-12">
+        <div class="col-md-8 col-sm-12 col-xs-12" style="    margin-bottom: 20px; ">
     
-            <h1><%=product.name%></h1>
+            <h1><%=product[0].BoatName%></h1>
             <div class="boat-detail__header__place"> <i class="fas fa-map-marker-alt"></i>
-                <span> Barcelona , Spain</span>
+                <span><%=product[0].DestinationName%></span>
             </div>
             <span class="boat-detail__header__id">
                 <strong>#</strong>
-                <span>4622</span>
+                <span><%=img[0].BoatID%></span>
             </span>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12">
@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-md-8 col-sm-12 col-xs-12 boat-detail__body boat-detail-main pull-right">
                 <div class="boat-detail_description">
-                        <p>Catamaran Elan enables you to enjoy the Mediterranean Sea to the fullest. ! She has a large and comfortable dining room that will make you feel at home.  The Catamaran Elan is fully equipped with a kitchen, 3 comfortable cabins, and two bathrooms, ready for you to get on board and enjoy the coast of Barcelona. You will live the Mediterranean atmosphere by sunbathing in the front soláriumes or in the external area while capturing the best captures of the city of Barcelona. It is a beautiful catamaran with a capacity of 11 people, perfect to share an afternoon along the coast of Barcelona, either with your friends or family.</p>
+                        <p style="    text-transform: lowercase;"><%=BoatDescription[0].BoatDescription  %> </p>
                         <div class="boat-detail__params">              
                             <div class="row">
                                 <div class="col-xl-6 col-sm-12">
@@ -42,27 +42,35 @@
                                     <div class="param-group">
                                         <div class="row">
                                             <div class="col-6">Length</div>
-                                            <div class="col-6">68</div>
+                                            <div class="col-6"><%= info[0].InfoLengt %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Passenger Capacity</div>
-                                            <div class="col-6">1</div>
+                                            <div class="col-6"><%= info[0].InfoPassengerCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Crew Capacity</div>
-                                            <div class="col-6">40</div>
+                                            <div class="col-6"><%= info[0].InfoCrewCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Sleep Capacity</div>
-                                            <div class="col-6">2</div>
+                                            <div class="col-6"><%= info[0].InfoSleepCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Year Built</div>
-                                            <div class="col-6">2007</div>
+                                            <div class="col-6"><%= info[0].InfoYearBuilt %></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">Fuel Capacity</div>
+                                            <div class="col-6"><%= info[0].InfoFuelCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Bed Count</div>
-                                            <div class="col-6">2</div>
+                                            <div class="col-6"><%= info[0].InfoBedCoun %></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">Bed Count</div>
+                                            <div class="col-6"><%= info[0].InfoCancellationPolicy %></div>
                                         </div>
                                     </div>
                                 </div>
@@ -71,35 +79,35 @@
                                         <h2 class="param-group__title">Features</h2>
                                         <div class="row">
                                             <div class="col-6">Snorkeling Gear</div>
-                                            <div class="col-6">No</div>
+                                            <div class="col-6"><%= Features[0].FeatureSnorkelingGear %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Paddleboards</div>
-                                            <div class="col-6">No</div>
+                                            <div class="col-6"><%= Features[0].FeaturePaddleboards %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Inflatable Extras</div>
-                                            <div class="col-6">No</div>
+                                            <div class="col-6"><%= Features[0].FeatureInflatableExtras %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Boat type</div>
-                                            <div class="col-6">Power</div>
+                                            <div class="col-6"><%= Features[0].FeatureBoatType %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Fishing Gear</div>
-                                            <div class="col-6">No</div>
+                                            <div class="col-6"><%= Features[0].FeatureFishingGear %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Local Cruising Fuel</div>
-                                            <div class="col-6">Pay for what you burn</div>
+                                            <div class="col-6"><%= Features[0].FeatureLocalCruisingFuel %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Crew</div>
-                                            <div class="col-6">1</div>
+                                            <div class="col-6"><%= Features[0].FeatureCrew %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Alcoholic Beverages</div>
-                                            <div class="col-6">soft drinks</div>
+                                            <div class="col-6"><%= Features[0].InfoBedCoun %></div>
                                         </div>
                                     </div>
                                 </div>
@@ -120,13 +128,14 @@
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12 pull-right boat-detail__floating" style="height: 100%;">
                 <div class="book-form">
-                    <form action="/cart" method="POST">
+                    <form action="/cart" method="GET">
                         <h3 class="book-form__title">Enter Your Travel Dates</h3>
                         <div class="book-form__row">
                             <div class="boat-item boat-cal">
                                 <div class="boat-item__setup">
                                     <div class="boat-item__calendar">
-                                        <table>
+                                        <!-- <table>
+                                            
                                             <thead>
                                                 <tr class="nav-nav">
                                                     <th colspan="7">
@@ -148,89 +157,30 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                    <td class="active"><span
-                                                            style="border-color: rgb(7, 81, 194);">19</span></td>
-                                                </tr>
-
+                                                <tr class="days"></tr>
                                             </tbody>
-                                        </table>
+                                        </table> -->
+                                        <div class="calendar">
+                                            <div class="month">
+                                              <i class="fas fa-angle-left prev"></i>
+                                              <div class="date">
+                                                <h1></h1>
+                                                <p></p>
+                                              </div>
+                                              <i class="fas fa-angle-right next"></i>
+                                            </div>
+                                            <div class="weekdays">
+                                              <div>Sun</div>
+                                              <div>Mon</div>
+                                              <div>Tue</div>
+                                              <div>Wed</div>
+                                              <div>Thu</div>
+                                              <div>Fri</div>
+                                              <div>Sat</div>
+                                            </div>
+                                            <div class="days"></div>
+                                          </div>
+                                          <input type="hidden" name="calendar" value="" id="calendar">
                                         <div class="book-form__row">
                                             <div class="row">
                                                 <div class="col-sm-4">
@@ -239,8 +189,7 @@
                                                 <div class="col-sm-8">
                                                     <div class="main-search_passengers">                                                      
                                                             <span class="minus "><i class="fas fa-minus-circle"></i></span>
-                                                            <input type="number" class="count" name="qty" value="1"  min="1" max="12"
-                                                            style="text-align: center;width: 100%;">
+                                                            <input type="number" class="count"  name="qssty" value="1"  min="1" max="12" style="text-align: center;width: 100%;">
                                                             <span class="plus"> <i class="fas fa-plus-circle"></i></span>                 
                                                     </div>
                                                 </div>
@@ -252,11 +201,12 @@
                                                     <label>Charter Type</label>
                                                 </div>
                                                 <div class="col-sm-8">
-                                                    <select class="form-control">
-                                                        <option selected>Charter - 2 Hours</option>
-                                                        <option value="1">Charter - 3 Hours</option>
-                                                        <option value="2">Charter - Half Day</option>
-                                                        <option value="3">Charter - Full Day</option>
+                                                 
+                                                    <select class="form-control" name="type" id="type" >
+                                                        <option selected value="2">Charter - 2 Hours</option>
+                                                        <option value="3">Charter - 3 Hours</option>
+                                                        <option value="4">Charter - Half Day</option>
+                                                        <option value="8">Charter - Full Day</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -267,7 +217,7 @@
                                                     <label>Charter Type</label>
                                                 </div>
                                                 <div class="col-sm-8 ">
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="time">
                                                         <option value="08:00:00" selected="selected">8 AM</option>
                                                         <option value="09:00:00">9 AM</option>
                                                         <option value="10:00:00">10 AM</option>
@@ -288,9 +238,10 @@
                                                 <div class="col-xl-6">
                                                     <span>Boat rental</span>
                                                 </div>
-                                                <div class="col-xl-6"><strong>
-                                                        $674.15
+                                                <div class="col-xl-6"><strong id="itemAmount">
+                                                        $<%=product[0].BoatPrice %> 
                                                     </strong>
+                                                    <input type="hidden" name="usd" id="usd">
                                                 </div>
                                             </div>
                                             <div id="book-item-template" class="row">
@@ -298,7 +249,7 @@
                                                     <span>Reservation Fee</span>
                                                 </div>
                                                 <div class="col-xl-6"><strong>
-                                                    $50.56
+                                                    $100
                                                     </strong>
                                                 </div>
                                             </div>
@@ -308,7 +259,7 @@
                                                         <span>Sales Tax (21%)</span>
                                                     </div>
                                                     <div class="col-xl-6"><strong>
-                                                        $167.36
+                                                        $<%= Math.ceil(product[0].BoatPrice/5) %> 
                                                         </strong>
                                                     </div>
                                                 </div>
@@ -318,7 +269,7 @@
                                                         <span>Total fee</span>
                                                     </div>
                                                     <div class="col-xl-6 text-right"><strong>
-                                                        $866.28
+                                                        $<%=product[0].BoatPrice + Math.ceil(product[0].BoatPrice/5) +100 %> 
                                                         </strong>
                                                     </div>
                                             </div>
@@ -327,6 +278,7 @@
                                         
                                         <div class="row">
                                             <div class="col-sm-12">
+                                                <input type="hidden" name="boatID" value="<%=img.BoatID%>">
                                                 <input type="submit" class="btn btn-primary" value="Request to Book" style=" font-size: 25px; background: #0751c2;
                                                 color: #fff;text-transform: uppercase; width: 100%;">
                                             </div>
@@ -351,24 +303,24 @@
                     <% if (totals === false) { %>       
                         <% if (ramdoms < index+1 && index+1 <= ramdoms + 4 ) { %>
                             <div class="col-sm-12 col-md-6 col-xl-3">
-                            <a href="/location/product?name=<%=element.name %> "class="boat-list_item">
+                            <a href="/location/product?name=<%=element.BoatName %>&browsers=<%=element.DestinationName %>"class="boat-list_item">
                                 <div class="boat-list_item_image">
-                                    <img src="/img/toan/img2.jpg 304w" alt="">
+                                    <img src="<%=element.Boat_Image_1 %>" alt="">
                                     <div class="boat-list_item_basic">
-                                        <div class="boat-list_item_type"><i class="fas fa-ship"></i><%= element.BoatSize %> 
+                                        <div class="boat-list_item_type"><i class="fas fa-ship"></i><%= element.InfoPassengerCapacity %> 
                                         </div>
-                                        <div class="boat-list_item_passengers">  <i class="fas fa-user-friends"></i><%= element.quantity %> </div>
+                                        <div class="boat-list_item_passengers">  <i class="fas fa-user-friends"></i><%= element.InfoLength %> </div>
                                     </div>
                                 </div>
                                 <div class="boat-list__item__holder">
                                     <div class="boat-list__item__header">
-                                        <h2 class="boat-list__item__title"><%= element.name %></h2>
+                                        <h2 class="boat-list__item__title"><%= element.BoatName %></h2>
                                     </div>
                                     <div class="boat-list__item__location">
-                                    <i class="fas fa-map-marker-alt"></i> <%= element.adress %>
+                                    <i class="fas fa-map-marker-alt"></i> <%= element.DestinationName %>
                                     </div>
                                     <div class="boat-list__item__price">
-                                    from <span><%= element.price %> </span>
+                                    from <span><%= element.BoatPrice %> </span>
                                 </div>
                                 </div>
                         </a>
@@ -378,24 +330,24 @@
                         
                             <% if (ramdoms - 4 < index+1 && index +1<= ramdoms  ) { %>
                                 <div class="col-sm-12 col-md-6 col-xl-3">
-                                <a href="product?name=<%=element.name %> "class="boat-list_item">
+                                <a href="product?name=<%=element.BoatName %> "class="boat-list_item">
                                     <div class="boat-list_item_image">
-                                        <img src="./img/toan/img2.jpg 304w" alt="">
+                                        <img src="<%=element.Boat_Image_1 %> " alt="">
                                         <div class="boat-list_item_basic">
-                                            <div class="boat-list_item_type"><i class="fas fa-ship"></i><%= element.BoatSize %> 
+                                            <div class="boat-list_item_type"><i class="fas fa-ship"></i><%= element.InfoPassengerCapacity %> 
                                             </div>
-                                            <div class="boat-list_item_passengers">  <i class="fas fa-user-friends"></i><%= element.quantity %> </div>
+                                            <div class="boat-list_item_passengers">  <i class="fas fa-user-friends"></i><%= element.InfoLength %> </div>
                                         </div>
                                     </div>
                                     <div class="boat-list__item__holder">
                                         <div class="boat-list__item__header">
-                                            <h2 class="boat-list__item__title"><%= element.name %></h2>
+                                            <h2 class="boat-list__item__title"><%= element.BoatName %></h2>
                                         </div>
                                         <div class="boat-list__item__location">
-                                        <i class="fas fa-map-marker-alt"></i> <%= element.adress %>
+                                        <i class="fas fa-map-marker-alt"></i> <%= element.DestinationName %>
                                         </div>
                                         <div class="boat-list__item__price">
-                                        from <span><%= element.price %> </span>
+                                        from <span><%= element.BoatPrice %> </span>
                                     </div>
                                     </div>
                             </a>
@@ -414,15 +366,25 @@
     <div class="row">
         <div class="col-xl-6 col-sm-12">
             <div class="hero-article-img" style="width:100%">
-                <img src="/img/toan/Barcelona.jpg" alt="">
+                <img src="<%= location[0].DestinationPhoto   %> " alt="">
             </div>
         </div>
-        <div class="col-xl-6 col-sm-12">
-            <h1>Barcelona</h1>
-            <p>One of the most visited cities in Europe, Barcelona is packed with things to see and do. From the UNESCO world heritage sites and amazing architecture of Anton Gaudi to numerous museums and art galleries, the capital of Catalonia definitely has a lot to offer to its visitors. You can also explore its coastline with a boat rental, admire famous paintings at the popular galleries, or just chill on the beach in the city. Here is a list of places that should be included in your travel itinerary in Barcelona.</p>
+        <div class="col-xl-6 col-sm-12" style="    padding: 60px;">
+            <h1 style="    margin-bottom: 30px;"><%=location[0].DestinationCountry  %> </h1>
+            <p style="text-transform: lowercase; font-size: 10.0pt;
+            font-family: Open Sans,sans-serif; color: black;">
+                <%= location[0].DestinationDescription %>
+            </p>
+            <!-- <p>One of the most visited cities in Europe, Barcelona is packed with things to see and do. From the UNESCO world heritage sites and amazing architecture of Anton Gaudi to numerous museums and art galleries, the capital of Catalonia definitely has a lot to offer to its visitors. You can also explore its coastline with a boat rental, admire famous paintings at the popular galleries, or just chill on the beach in the city. Here is a list of places that should be included in your travel itinerary in Barcelona.</p>
             <p><b>Beaches</b>- Exploring the Spanish coastline with a boat rental is an experience unlike any other and one of the places that you simply must include in your sailing itinerary is the lovely Ocata Beach. Nova Icaria Beach, is an ideal destination for couples and vacationers who are hoping to find some peace and quiet. Barceloneta Beach is definitely the most crowded beach in the city with plenty of opportunity for watersports, kite-surfing and windsurfing. Marbella Beach is an ideal destination if you are sailing in the Mediterranean with a luxury yacht charter. There are dozens of great bars, as well as opportunities for watersports including kayaking and windsurfing. Located on Bogatell beach, Vai Moana is one of the most popular beach bars in this part of the city. No beach vacation with a boat rental in Spain is complete without a visit to the popular CatWalk beach club. World-famous DJ’s perform here at the Barcelona’s CatWalk on a regular basis. If your idea of a perfect vacation in Barcelona includes relaxing treatments in the spa and spending the whole day by the pool, head out to Purobeach Barcelona beach club.</p>
             <p><b>The City</b>- One of the most famous Anton Gaudi’s houses in the city, Casa Batlló is a popular tourist attraction that draws large crowds of tourists each day. This colorful building can be best described as fundamental work of Catalan modernism. In case you are interested in the history of Barcelona, head out to the Barcelona History Museum that boasts around 4,000 square meters of Roman ruins. Another Gaudi’s house, Casa Milá or as some like to call it La Pedrera is one of the most popular attractions in the city. The Gothic Cathedral built on top of a church from the 11th century, is conveniently located right in the center of the Barri Gotic.</p>
-            <p><b>Water Activities</b>- Scuba diving is one of the best ways to explore the underwater marine life here in Barcelona. A yacht charter allows access to remote places around the city and there are a number of great scuba diving destinations along the way. Some of the most popular sites include the hidden wrecks in L’Escala and shipwrecks in Palamos. There are plenty of opportunities for kayaking in Barcelona, as this is one of the most popular water sports here. Some tours include visits to the dark caves in the north of Barcelona along the coast of Costa Brava. Vacationers who after an adrenaline rush should totally try flyboarding. This great water sport enables you to fly a few feet over the water while you are being propelled by a motorized vehicle. Sailing on a chartered yacht is one of the best ways to explore the whole area around the city of Barcelona. You can either rent a bareboat charter that comes without a crew or you can take a chartered yacht and don’t have to worry about steering the wheel.</p>
+            <p><b>Water Activities</b>- Scuba diving is one of the best ways to explore the underwater marine life here in Barcelona. A yacht charter allows access to remote places around the city and there are a number of great scuba diving destinations along the way. Some of the most popular sites include the hidden wrecks in L’Escala and shipwrecks in Palamos. There are plenty of opportunities for kayaking in Barcelona, as this is one of the most popular water sports here. Some tours include visits to the dark caves in the north of Barcelona along the coast of Costa Brava. Vacationers who after an adrenaline rush should totally try flyboarding. This great water sport enables you to fly a few feet over the water while you are being propelled by a motorized vehicle. Sailing on a chartered yacht is one of the best ways to explore the whole area around the city of Barcelona. You can either rent a bareboat charter that comes without a crew or you can take a chartered yacht and don’t have to worry about steering the wheel.</p> -->
         </div>
     </div>
 </div>
+<style>
+    body{
+          background-color: #fff; 
+          font-family: 'Avenir Next',sans-serif;
+    }
+</style>

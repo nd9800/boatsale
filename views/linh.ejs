@@ -39,20 +39,21 @@
                 <div class="container" style="padding: 0; margin-top: 0;">
                     <div class="homepage-item">
                         <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <form action="#" autocomplete="off" class="store-form" data-action="#" data-method="POST" method="get" novalidate="novalidate">
+                            <form action="/location"  method="get" >
+                                <!-- autocomplete="off" class="store-form" data-action="#" data-method="POST" novalidate="novalidate" -->
                                 <div style="width: 100%">
                     <span class="input-location">
                 <div class="input-group">
                     <div class="input-pin">
                             <img class="pic1" src="img/pin.svg">
-                        <form action="#">
-                            <input list="browsers" class="search1" name="browsers" placeholder="Destination">
+                     
+                            <input list="browsers" type="text" class="search1" name="browsers" placeholder="Destination" >
                             <datalist id="browsers">
-                                <option value="1">1</option>
+                                <option value="Dubai">Dubai</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </datalist>
-                        </form>
+                
                     </div>
                       <div id="datepicker" class="input-group date  "  data-date-format="dd-mm-yyyy">
                           <img class="pic1" src="img/calendar.svg">
@@ -60,7 +61,7 @@
                           <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
                     <div class="input-watch">
-                <form action="#">
+            
                     <img class="pic1" src="img/watch.svg">
                     <input  list="watchs" class="search2" name="Duration" placeholder="Duration">
           <datalist id="watchs">
@@ -68,18 +69,18 @@
                         <option value="Multe-Day Charter">Multe-Day Charter</option>
                         <option value="Week-Charter">Week-Charter</option>
               </datalist>
-                    </form>
+                
                 </div>
 
                     <div class="input-number">
-                        <form action="#">
+                       
                             <img class="pic1" src="img/passengers.svg">
                         <select class="search3" name="human">
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="13+">13+</option>
 
-                        </select></form>
+                        </select>
                     </div>
             <button type="submit" class="btn btn--bold" id="search">
                         <img src="img/search.svg">
