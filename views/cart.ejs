@@ -8,20 +8,20 @@
                 <h2>We will contact you shortly !</h2>
                 <label style="padding:20px 0;font-size:25px;opacity:0.8">Your Information</label>
                 <div class="main-content">
-                    <form data-toggle="validator" role="form" action="/request-complete" method="post" data-error="Wrong Input, Please re-enter" >
+                    <form data-toggle="validator" role="form" action="/form-conplete" method="post" data-error="Wrong Input, Please re-enter" >
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>First Name</label>
-                                    <input type="text" class="form-control"  data-error="First name is required" required />
+                                    <input name="CustomerName" type="text" class="form-control"  data-error="First name is required" required />
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Last Name</label>
-                                    <input type="text" class="form-control"  data-error="Last name is required" required/>
+                                    <input name="CustomerLastname" type="text" class="form-control"  data-error="Last name is required" required/>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -32,13 +32,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="inputEmail">E-mail</label>
-                                    <input type="email" class="form-control" id="inputEmail"  data-error="E-mail is required" required>
+                                    <input name="CustomerEmail" type="email" class="form-control" id="inputEmail"  data-error="E-mail is required" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <label>Phone</label><br/>
-                                <input id="phone" class="form-control"  name="phone" type="tel"/>
+                                <input id="phone" class="form-control"  name="CustomerPhone" type="tel"/>
                             </div>
                             <script src="/libs/build/js/intlTelInput.js"></script>
                             <script>
