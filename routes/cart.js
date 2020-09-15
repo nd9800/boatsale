@@ -24,8 +24,8 @@ router.get("/request-complete",function (req,res){
 
 
 const bodyParser =require("body-parser");
-app.use(bodyParser.urlencoded({extended:true}));
-app.post("/form-complete",function (req,res){
+router.use(bodyParser.urlencoded({extended:true}));
+router.post("/request-complete",function (req,res){
     let fn = req.body.CustomerName;
     let ln = req.body.CustomerLastname;
     let email = req.body.CustomerEmail;
@@ -36,4 +36,6 @@ app.post("/form-complete",function (req,res){
         else res.redirect("/request-complete");
     })
 })
+
+
 module.exports = router;
