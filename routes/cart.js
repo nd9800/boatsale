@@ -26,11 +26,11 @@ router.get("/request-complete",function (req,res){
 const bodyParser =require("body-parser");
 router.use(bodyParser.urlencoded({extended:true}));
 router.post("/request-complete",function (req,res){
-    let fn = req.body.CustomerName;
-    let ln = req.body.CustomerLastname;
+    let fn = req.body.CustomerFirstName;
+    let ln = req.body.CustomerLastName;
     let email = req.body.CustomerEmail;
     let phone = req.body.CustomerPhone;
-    let sql_text = "INSERT INTO T2004E_GROUP1_Customer(CustomerName,CustomerLastname,CustomerEmail,CustomerPhone) VALUES('"+fn+"','"+ln+"','"+email+"','"+phone+"')"
+    let sql_text = "INSERT INTO T2004E_GROUP1_Customer(CustomerFirstName,CustomerLastName,CustomerEmail,CustomerPhone) VALUES('"+fn+"','"+ln+"','"+email+"','"+phone+"')"
     db.query(sql_text,function(err,rows){
         if(err) res.send(err);
         else res.redirect("/request-complete");
