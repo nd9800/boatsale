@@ -53,7 +53,7 @@
                             <select class="search1" data-val="true" data-val-number="The field LocationId must be a number." data-val-required="The LocationId field is required." id="locationId" name="LocationId" placeholder="Destination" required="required">
                                 <option selected disabled style="display:none">Destination</option>
                                 <% des.map(function (v){ %>
-                                    <option value="<%= v.DestinationName %>"></option>
+                                    <option value="<%= v.DestinationName %>"><%= v.DestinationName %></option>
                                 <% }) %>
                             </select>
                         </form>
