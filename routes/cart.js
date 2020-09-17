@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+<<<<<<< HEAD
 const db = require('../model/conect')
 const bodyParser = require('body-parser');
 router.use(bodyParser.urlencoded({ extended: true }));
@@ -48,8 +49,44 @@ router.get("/cart", async function (req,res){
         boat2s:boat2.recordsets[0]
      //   boats:boat.recordsets[0]
     });
+=======
+const mssql = require("mssql");
+const app = express();
+const config = {
+    server:'101.99.13.2',
+    database:'test',
+    user: 'sa',
+    password: 'z@GH7ytQ'
+}
+
+mssql.connect(config,function (err) {
+    if(err) console.log("Error");
+    else console.log("Connected!");
+});
+var db = new mssql.Request();
+router.get("/request",function (req,res){
+    res.render("cart");
+>>>>>>> 8a245ff61cbe06cca39ae5efb3c2ee910affa1bd
 });
 router.get("/request-complete",function (req,res){
     res.render("request-complete");
 });
+
+
+
+const bodyParser =require("body-parser");
+router.use(bodyParser.urlencoded({extended:true}));
+router.post("/request-complete",function (req,res){
+    let fn = req.body.CustomerFirstName;
+    let ln = req.body.CustomerLastName;
+    let email = req.body.CustomerEmail;
+    let phone = req.body.CustomerPhone;
+    let sql_text = "INSERT INTO T2004E_GROUP1_Customer(CustomerFirstName,CustomerLastName,CustomerEmail,CustomerPhone) VALUES('"+fn+"','"+ln+"','"+email+"','"+phone+"')"
+    db.query(sql_text,function(err,rows){
+        if(err) res.send(err);
+        else res.redirect("/request-complete");
+    })
+})
+
+
 module.exports = router;
