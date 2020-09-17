@@ -44,13 +44,16 @@
                 <div class="container" style="padding: 0; margin-top: 0;">
                     <div class="homepage-item">
                         <div class="main-search col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <form action="/en/p/boatsetter/marketplace/boats" autocomplete="off" class="boat-form store-form" data-action="/en/p/boatsetter/marketplace/data/getboats" data-method="POST" method="get">
+                            <form action="/location"  method="get" >
+                                <!-- autocomplete="off" class="store-form" data-action="#" data-method="POST" novalidate="novalidate" -->
+                                <div style="width: 100%">
                     <span class="input-location">
                         <div class="input-group" style="margin-left: 5px;margin-right: 5px">
                     <div style="text-align: center;padding-top: 2px" class="input-pin">
                             <img class="pic1" src="img/pin.svg">
                         <form action="#">
-                            <select class="search1" data-val="true" data-val-number="The field LocationId must be a number." data-val-required="The LocationId field is required." id="locationId" name="LocationId" placeholder="Destination" required="required">
+                            <!-- <input list="browsers" type="text" class="search1" name="browsers" placeholder="Destination" > -->
+                            <select  id="browsers" class="search1" data-val="true" data-val-number="The field LocationId must be a number." data-val-required="The LocationId field is required." id="browsers" name="browsers" placeholder="Destination" required="required">
                                 <option selected disabled style="display:none">Destination</option>
                                 <% des.map(function (v){ %>
                                     <option value="<%= v.DestinationName %>"><%= v.DestinationName %></option>
@@ -165,7 +168,7 @@
                 <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Mediterranean</h4>
             </div>
             <% med.map(function (v){ %>
-                <a href="/location" class="link">
+                <a href="/location?browsers=<%= v.DestinationName  %> " class="link">
                     <div class="box col-md-4 col-sm-6 col-xs-12">
                         <div class="item" style="background-image: url('<%= v.DestinationPhoto %>')">
                             <p class="text4"><%= v.DestinationName %></p>
@@ -182,7 +185,7 @@
                 <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
             </div>
             <% rest.map(function (v){ %>
-                <a href="/location" class="link">
+                <a href="/location?browsers=<%= v.DestinationName  %> " class="link">
                     <div class="box col-md-4 col-sm-6 col-xs-12">
                         <div class="item" style="background-image: url('<%= v.DestinationPhoto %>')">
                             <p class="text4"><%= v.DestinationName %></p>

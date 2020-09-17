@@ -1,106 +1,170 @@
-<div class="boats-header">
-    <section class="search-header">
-        <img src="/img/toan/GLYFADA 2.jpg" alt="" srcset="">
-        <div class="container">
-            <span class="search-header_title">
-                Glyfada
-                <small class="region">
-                    <span>Greece</span>
-                    <span>/</span>
-                    <span>Mediterranean</span>
-                </small>
-            </span>
-            
-    </div>
-    </section>
-</div>
-<div class="container">
-    <div class="refine-search">
-        <h1 class="boat-summary">
-            Top rentals near Glyfada
-        </h1>
-        <form action="#" method="POST">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-xl-3"> <span>Refine search:</span></div>
-                <div class="col-sm-12 col-md-6 col-xl-6">
-                        <div class="filter-holder">
-                        <label class="filter-label" for="Filter_PriceFrom"></label> 
-                    <span>
-                        <input type="range" name="price_start" min="0" max="100" value="0">
-                        <input type="range" name="end" min="0" max="100" value="100">
-                    </span>
-                    </div>
-                </div>       
-                <div class="col-sm-12 col-md-6 col-xl-3">
-                    <div class="instantbookable">
-                    <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/icons/insta-booking.svg?8rb6umielk" alt="">
-                    <label for="bookale">Instant bookable</label>
-                    <label class="switch">
-                    <input id="IsInstantBookable" name="IsInstantBookable" type="checkbox" value="true">
-                    <input name="IsInstantBookable" type="hidden" value="false">
-                    <span class="slider round"></span>
-                    </label>
-                </div>
-            </div>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="panel panel-gray">
-    <div class="container">
 
-                <div class="row">
-                    <% product.map(element => { %>           
-                        <div class="col-sm-12 col-md-6 col-xl-3">
-                            <a href="/location/product?name=<%=element.name %> "class="boat-list_item">
-                                <div class="boat-list_item_image">
-                                    <img src="/img/toan/img2.jpg 304w" alt="">
-                                    <div class="boat-list_item_basic">
-                                        <div class="boat-list_item_type"><i class="fas fa-ship"></i><%= element.BoatSize %> 
-                                        </div>
-                                        <div class="boat-list_item_passengers"><i class="fas fa-user-friends"></i><%= element.quantity %> </div>
-                                    </div>
-                                </div>
-                                <div class="boat-list__item__holder">
-                                    <div class="boat-list__item__header">
-                                        <h2 class="boat-list__item__title"><%= element.name %></h2>
-                                    </div>
-                                    <div class="boat-list__item__location">
-                                    <i class="fas fa-map-marker-alt"></i><%= element.adress %>
-                                    </div>
-                                    <div class="boat-list__item__price">
-                                    from <span><%= element.price %> </span>
-                                </div>
-                                </div>
-                        </a>  
-                        </div>
-                            <% }) %>
-                    
-                </div>
-            
-
-            <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <% if (currentPages<=1) { %>
-                    <li class="page-item"><a class="page-link" href="/location/<%= 1 %>"><i class="fas fa-chevron-left"></i></a></li>
+    <% if (product == '') { %>
+            <div style="width: 1000px;
+            height: 1000px; display: flex; justify-content: center;
+            align-items: center; text-align: center; margin: 0 auto;"
+            >no data</div>
                 
-                <% } else { %>
-                    <% currentPages-- %> 
-                    <li class="page-item"><a class="page-link" href="/location/<%= currentPages %>"><i class="fas fa-chevron-left"></i></a></li>
-            
-                <% } %>          
-                <% for( let index = 0; index < page ; index++ ) { %>
-                <li class="page-item"><a class="page-link" href="/location/<%= index + 1 %>"><%= index + 1%></a></li>
-                <% } %>
-                <% if (currentPages >= page ) { %>
-                <li class="page-item"><a class="page-link" href="/location/<%= page %>"><i class="fas fa-chevron-left"></i></a></li>
-                <% } %>
-                <% if (currentPages>=1) { %>
-                <% currentPages++ %> 
-                <li class="page-item"><a class="page-link" href="/location/<%= currentPages %>"><i class="fas fa-chevron-right"></i></a></li>
-            <% } %>  
-            
-            </ul>
-            </nav>
-    </div>
-</div>
+    <% } else { %>
+        <div class="boats-header">
+            <section class="search-header">
+                <img src="<%=boat3s[0].DestinationPhoto  %> " alt="" srcset="">
+                <div class="container">
+                   
+                    <span class="search-header_title">
+                        <%=boat3s[0].DestinationCountry %>
+                        <small class="region">
+                            <span id="browsers"><%=boat3s[0].DestinationName %> </span>
+                            <span>/</span>
+                            <span><%=boat3s[0].DestinationArea %></span>
+                        </small>
+                    </span>
+                
+                    <!-- <span class="search-header_title">
+                        Glyfada
+                        <small class="region">
+                            <span>Greece</span>
+                            <span>/</span>
+                            <span>Mediterranean</span>
+                        </small>
+                    </span> -->
+                    
+            </div>
+            </section>
+        </div>
+        <div class="container">
+            <div class="refine-search">
+                <h1 class="boat-summary">
+                    Top rentals near Glyfada
+                </h1>
+                <form action="#" method="POST">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-xl-3"> <span>Refine search:</span></div>
+                        <div class="col-sm-12 col-md-6 col-xl-3" style="padding: 0;">
+                                <div class="filter-holder" style="    display: flex;
+                                justify-content: space-around;">
+                                <!-- <label class="filter-label" for="Filter_PriceFrom"></label>  -->
+                            <span>
+                                <div class ="price_value">
+                                    <span class="price_start_value">$0</span>
+                                    <span class="price_end_value">$10000</span>
+                                    <span class="price_start_end_value" style="display: none">0$-$10000</span>
+                                </div>
+                                <div class="price">
+                                    <input type="range" name="price_start" min="0" max="10000" value="0" id="price_start" >
+                                    <input type="range" name="price_end" min="0" max="10000" value="10000" id="price_end" >
+                                    <div class="sliders">
+                                        <div class="track"></div>
+                                        <div class="range"></div>
+                                        <div class="thumb left"></div>
+                                        <div class="thumb right"></div>
+                                        </div>
+                                </div>
+                            </span>
+                   
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3"> 
+                            <span>
+                            <div class ="fit_value">
+                                <span class="fit_start_value">0 fit</span>
+                                <span class="fit_end_value">100fit+</span>
+                                <span class="fit_start_end_value" style="display: none">0 fit-10000 fit</span>
+                            </div>
+                            <div class="fit">
+                                <input type="range" name="fit_start" min="0" max="100" value="0" id="fit_start" >
+                                <input type="range" name="fit_end" min="0" max="100" value="100" id="fit_end" >
+                                <div id="sliders">
+                                    <div id="track"></div>
+                                    <div id="range"></div>
+                                    <div id="thumb" class="left"></div>
+                                    <div id="thumb" class="right"></div>
+                                    </div>
+                            </div>
+                        </span>
+                    </div>
+          
+                        <div class="col-sm-12 col-md-6 col-xl-3 " style="display: none;">
+                            <div class="instantbookable">
+                            <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/icons/insta-booking.svg?8rb6umielk" alt="">
+                            <label for="bookale">Instant bookable</label>
+                            <label class="switch">
+                            <input id="IsInstantBookable" name="IsInstantBookable" type="checkbox" value="false">
+                            <input name="IsInstantBookable" type="hidden" value="false">
+                            <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="panel panel-gray">
+            <div class="container">
+        
+                        <div class="row" id="boat-list">
+                            <% product.map(element => { %>           
+                                <div class="col-sm-12 col-md-6 col-xl-3">
+                                    <a href="/location/product?name=<%=element.BoatName %>&browsers=<%=element.DestinationName[0] %>&BoatID=<%=element.BoatID[0]  %> "class="boat-list_item">
+                                        <div class="boat-list_item_image">
+                                            <img src="<%=element.Boat_Image_1%>" alt="">
+                                     
+                                            <div class="boat-list_item_basic">
+                                                <div class="boat-list_item_type"><i class="fas fa-ship"></i><%= element.InfoPassengerCapacity %> 
+                                                </div>
+                                                <div class="boat-list_item_passengers"><i class="fas fa-user-friends"></i><%= element.InfoLength %> </div>
+                                            </div>
+                                        </div>
+                                        <div class="boat-list__item__holder">
+                                            <div class="boat-list__item__header">
+                                                <h2 class="boat-list__item__title"><%= element.BoatName %></h2>
+                                            </div>
+                                            <div class="boat-list__item__location">
+                                            <i class="fas fa-map-marker-alt"></i><%= element.DestinationName[0] %>
+                                            </div>
+                                            <div class="boat-list__item__price">
+                                            from <span><%= element.BoatPrice %> </span>
+                                        </div>
+                                        </div>
+                                </a>  
+                                </div>
+                                    <% }) %>
+                            
+                        </div>
+                    
+        
+                    <nav aria-label="Page navigation example">
+                    <ul class="pagination" id="pagination">
+                        <% if (currentPages<=1) { %>
+                            <li class="page-item"><a class="page-link" href="/location/<%= 1 %>?browsers=<%=boat3s[0].DestinationName %>"><i class="fas fa-chevron-left"></i></a></li>
+                        
+                        <% } else { %>
+                            <% currentPages-- %> 
+                            <li class="page-item"><a class="page-link" href="/location/<%= currentPages %>?browsers=<%=boat3s[0].DestinationName %>"><i class="fas fa-chevron-left"></i></a></li>
+                    
+                        <% } %>          
+                        <% for( let index = 0; index < page ; index++ ) { %>
+                        <li class="page-item"><a class="page-link" href="/location/<%= index + 1 %>?browsers=<%=boat3s[0].DestinationName %>"><%= index + 1%></a></li>
+                        <% } %>
+                        <% if (currentPages >= page ) { %>
+                        <li class="page-item"><a class="page-link" href="/location/<%= page %>?browsers=<%=boat3s[0].DestinationName %>"><i class="fas fa-chevron-left"></i></a></li>
+                        <% } %>
+                        <% if (currentPages>=1) { %>
+                        <% currentPages++ %> 
+                        <li class="page-item"><a class="page-link" href="/location/<%= currentPages %>?browsers=<%=boat3s[0].DestinationName %>"><i class="fas fa-chevron-right"></i></a></li>
+                    <% } %>  
+                    
+                    </ul>
+                    </nav>
+            </div>
+        </div>
+            <style>
+                body{
+                    background: #fff;
+                }
+                .footer{
+                    background: #fff !important;
+                }
+            </style>
+        <% } %>
+<script src="/js/slider.js"></script>
