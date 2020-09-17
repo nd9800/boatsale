@@ -1,13 +1,22 @@
 <main class="section">
-    <div class="container">
+    <div class="container main-box">
         <div class="row">
+<<<<<<< HEAD
             <div class="col-md-8 col-sm-12  infopage__floating">
                 <h1 class="title" style="text-align:center;padding-bottom:70px">
                     Complete Your Booking
                 </h1>
                 <label style="padding:30px 0;font-size:25px;opacity:0.8">1. Your Information</label>
+=======
+            <div class="col-md-9 col-sm-12 col-xs-12  infopage__floating">
+                <h1 class="title" >
+                    SEND US YOUR REQUEST
+                </h1><br/>
+                <h2>We will contact you shortly !</h2>
+                <label style="padding:20px 0;font-size:25px;opacity:0.8">Your Information</label>
+>>>>>>> 042770e5c930fcde0cef1b84f5023705604ee485
                 <div class="main-content">
-                    <form data-toggle="validator" role="form" action="#" method="get" data-error="Wrong Input, Please re-enter" >
+                    <form data-toggle="validator" role="form" action="/request-complete" method="post" data-error="Wrong Input, Please re-enter" >
 
                         <div class="row">
                             <div class="col-md-6">
@@ -48,7 +57,7 @@
                                     // autoPlaceholder: "off",
                                     // dropdownContainer: document.body,
                                     // excludeCountries: ["us"],
-                                    // formatOnDisplay: false,
+                                     //formatOnDisplay: false,
                                     // geoIpLookup: function(callback) {
                                     //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
                                     //     var countryCode = (resp && resp.country) ? resp.country : "";
@@ -80,7 +89,7 @@
 
 
                         <div class="form-group" style=" border-top: 1px solid rgba(0,0,0,.2);margin-top:30px;">
-                            <button type= "submit" class="btn pull-right" style="margin-top:20px">continue</button>
+                            <button type= "submit" class="btn pull-right" style="margin-top:20px;font-weight:600;font-size:20px">submit</button>
                         </div>
                     </form>
                 </div>
@@ -117,7 +126,7 @@
                     </div>
                     <div class="row prop" style=" padding-bottom:5px; border-bottom: 1px solid rgba(0,0,0,.2)">
                         <div class="col-xl-6 label-text">Sales Tax (21%)</div>
-                        <div class="col-xl-6 text-right">$<%=Math.ceil(usds/21*100) %></div>
+                        <div class="col-xl-6 text-right">$<%=Math.ceil(usds/100*21)%></div>
                     </div>
                     <div class="row prop"  style="
                     argin-left: 0;
@@ -128,14 +137,10 @@
                     font-style: normal;
                     padding-bottom:5px; border-bottom: 1px solid rgba(0,0,0,.2)">
                         <div class="col-xl-6 label-text">Total fee</div>
-                        <div class="col-xl-6 text-right">$<%=usds + Math.ceil(usds/21*100) +100 %></div>
+                        <div class="col-xl-6 text-right">$<%=usds + Math.ceil(usds/100*21) +100 %></div>
                     </div>
 
-                </div>
-                <div class="notice">
-                    <i class="glyphicon glyphicon-warning-sign" style="padding-left: 3px; color: #0072a0;"></i>
-                    <span>You won't be charged until the request is approved and confirmed by the boat operator.</span></div>
-            </div>
+</div>
         </div>
     </div>
 

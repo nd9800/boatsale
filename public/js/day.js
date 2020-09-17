@@ -1,29 +1,30 @@
 const date = new Date();
-
+let days =date.getDate()
+const calendar = document.getElementById('calendar');
 const renderCalendar = () => {
   date.setDate(1);
-
-console.log(date)
   const monthDays = document.querySelector(".days");
-
   const lastDay = new Date(
     date.getFullYear(),
     date.getMonth() + 1,  
     0
   ).getDate();
+  
   const prevLastDay = new Date(
     date.getFullYear(),
     date.getMonth(),
     0
   ).getDate();
   const firstDayIndex = date.getDay();
-  console.log(firstDayIndex)
   const lastDayIndex = new Date(
     date.getFullYear(),
     date.getMonth() + 1,
     0
   ).getDay();
-  console.log(lastDayIndex)
+  
+
+ console.log(firstDayIndex);
+ console.log(lastDayIndex);
   
   const nextDays = 7 - lastDayIndex - 1;
 
@@ -60,6 +61,7 @@ console.log(date)
       date.getMonth() === new Date().getMonth()
     ) {
       days += `<div class="active">${i}</div>`;
+    
     } else {
       days += `<div>${i}</div>`;
     }
@@ -83,27 +85,28 @@ document.querySelector(".next").addEventListener("click", () => {
   renderactive()
 });
 
-renderCalendar();
 
-
+function SetLich(days) {
+  calendar.value =  `${days}\\${date.getMonth()+1}\\${date.getFullYear()} `
+}
+SetLich(days)
 function renderactive() {
   const bg = document.querySelectorAll('.days div');
-  const calendar = document.getElementById('calendar');
 
 for (let index = 0; index < bg.length; index++) {
   const element = bg[index];
   element.addEventListener('click',function () {
     for (let index = 0; index < bg.length; index++) {
-      const element = bg[index];
+      const element = bg[index]; 
       element.classList.remove("active");
     }
       element.classList.add("active");
-      let day = element.textContent
-    let ca=  calendar.value =  `${day}\\${date.getMonth()}\\${date.getFullYear()} `
-    console.log(ca)
+       days = element.textContent
+      SetLich(days)
     
   })
 }
 
 }
+ renderCalendar();
 renderactive()

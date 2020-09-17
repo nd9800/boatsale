@@ -1,24 +1,25 @@
 <div class="owl-carousel owl-theme">
-<div class="item" ><img src="<%=img[0].Boat_Image_1%>"></div>
-<div class="item" ><img src="<%=img[0].Boat_Image_2%>"></div>
-<div class="item" ><img src="<%=img[0].Boat_Image_3%>"></div>
-<div class="item" ><img src="<%=img[0].Boat_Image_4%>"></div>
-<div class="item" ><img src="<%=img[0].Boat_Image_5%>"></div>
-<div class="item" ><img src="<%=img[0].Boat_Image_6%>"></div>
+<div class="item" ><img src="<%=boats[0].Boat_Image_1%>"></div>
+<div class="item" ><img src="<%=boats[0].Boat_Image_2%>"></div>
+<div class="item" ><img src="<%=boats[0].Boat_Image_3%>"></div>
+<div class="item" ><img src="<%=boats[0].Boat_Image_4%>"></div>
+<div class="item" ><img src="<%=boats[0].Boat_Image_5%>"></div>
+<div class="item" ><img src="<%=boats[0].Boat_Image_6%>"></div>
 </div>
 <div class="boat-detail">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-sm-12 col-xs-12" style="    margin-bottom: 20px; ">
     
-            <h1><%=product[0].BoatName%></h1>
+            <h1><%=boats[0].BoatName%></h1>
             <div class="boat-detail__header__place"> <i class="fas fa-map-marker-alt"></i>
-                <span><%=product[0].DestinationName%></span>
+                <span><%=boats[0].DestinationName[0]%></span>
+                <span>,<%=boats[0].DestinationCountry%></span>
             </div>
-            <span class="boat-detail__header__id">
+            <div class="boat-detail__header__id">
                 <strong>#</strong>
-                <span><%=img[0].BoatID%></span>
-            </span>
+                <span><%=boats[0].BoatID[0]%></span>
+            </div>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="boat-detail__header__pricing">
@@ -34,92 +35,88 @@
         <div class="row">
             <div class="col-md-8 col-sm-12 col-xs-12 boat-detail__body boat-detail-main pull-right">
                 <div class="boat-detail_description">
-                        <p style="    text-transform: lowercase;"><%=BoatDescription[0].BoatDescription  %> </p>
-                        <div class="boat-detail__params">              
+                        <p style="    text-transform: lowercase;"><%=boats[0].BoatDescription  %> </p>
+                        <div class="boat-detail__params-fix">              
                             <div class="row">
                                 <div class="col-xl-6 col-sm-12">
                                     <h2 class="param-group__title">Boat info</h2>
-                                    <div class="param-group">
+                                    <div class="param-group-content">
                                         <div class="row">
                                             <div class="col-6">Length</div>
-                                            <div class="col-6"><%= info[0].InfoLengt %></div>
+                                            <div class="col-6"><%= boats[0].InfoLengt %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Passenger Capacity</div>
-                                            <div class="col-6"><%= info[0].InfoPassengerCapacity %></div>
+                                            <div class="col-6"><%= boats[0].InfoPassengerCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Crew Capacity</div>
-                                            <div class="col-6"><%= info[0].InfoCrewCapacity %></div>
+                                            <div class="col-6"><%= boats[0].InfoCrewCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Sleep Capacity</div>
-                                            <div class="col-6"><%= info[0].InfoSleepCapacity %></div>
+                                            <div class="col-6"><%= boats[0].InfoSleepCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Year Built</div>
-                                            <div class="col-6"><%= info[0].InfoYearBuilt %></div>
+                                            <div class="col-6"><%= boats[0].InfoYearBuilt %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Fuel Capacity</div>
-                                            <div class="col-6"><%= info[0].InfoFuelCapacity %></div>
+                                            <div class="col-6"><%= boats[0].InfoFuelCapacity %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Bed Count</div>
-                                            <div class="col-6"><%= info[0].InfoBedCoun %></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6">Bed Count</div>
-                                            <div class="col-6"><%= info[0].InfoCancellationPolicy %></div>
+                                            <div class="col-6"><%= boats[0].InfoCancellationPolicy %></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-6 col-sm-12">
-                                    <div class="param-group">
+                                    <div class="param-group-content">
                                         <h2 class="param-group__title">Features</h2>
                                         <div class="row">
                                             <div class="col-6">Snorkeling Gear</div>
-                                            <div class="col-6"><%= Features[0].FeatureSnorkelingGear %></div>
+                                            <div class="col-6"><%= boats[0].FeatureSnorkelingGear %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Paddleboards</div>
-                                            <div class="col-6"><%= Features[0].FeaturePaddleboards %></div>
+                                            <div class="col-6"><%= boats[0].FeaturePaddleboards %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Inflatable Extras</div>
-                                            <div class="col-6"><%= Features[0].FeatureInflatableExtras %></div>
+                                            <div class="col-6"><%= boats[0].FeatureInflatableExtras %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Boat type</div>
-                                            <div class="col-6"><%= Features[0].FeatureBoatType %></div>
+                                            <div class="col-6"><%= boats[0].FeatureBoatType %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Fishing Gear</div>
-                                            <div class="col-6"><%= Features[0].FeatureFishingGear %></div>
+                                            <div class="col-6"><%= boats[0].FeatureFishingGear %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Local Cruising Fuel</div>
-                                            <div class="col-6"><%= Features[0].FeatureLocalCruisingFuel %></div>
+                                            <div class="col-6"><%= boats[0].FeatureLocalCruisingFuel %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Crew</div>
-                                            <div class="col-6"><%= Features[0].FeatureCrew %></div>
+                                            <div class="col-6"><%= boats[0].FeatureCrew %></div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">Alcoholic Beverages</div>
-                                            <div class="col-6"><%= Features[0].InfoBedCoun %></div>
+                                            <div class="col-6"><%= boats[0].InfoBedCoun %></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="boat-detail__params">
+                        <div class="boat-detail__params-fix">
                             <div class="param-group-end">
                                 <h2 class="param-group__title" style="border-bottom:none">Pricing</h2>
                                 <h3 class="param-group__subtitle">Offered charter packages. Pricings excluding optional items.</h3>
                                 <div class="row">
                                     <div class="col-xl-8">Full Day (8 Hours)</div>
-                                    <div class="col-xl-4 text-right">$5,135.43</div>
+                                    <div class="col-xl-4 text-right" id="fullday">  $<%=(Math.ceil(boats[0].BoatPrice) + Math.ceil(boats[0].BoatPrice/100*21) +100)*2 %> </div>
                                 </div>
                             </div>
                                 
@@ -127,39 +124,14 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12 pull-right boat-detail__floating" style="height: 100%;">
-                <div class="book-form">
-                    <form action="/cart" method="GET">
-                        <h3 class="book-form__title">Enter Your Travel Dates</h3>
+                <div id="book-form">
+                         <form action="/cart" method="GET">
+                    <!-- <form action="/request" method="POST"> -->
+                        <h3 class="book-form__title " style="margin: 17px 0 0px;">Enter Your Travel Dates</h3>
                         <div class="book-form__row">
                             <div class="boat-item boat-cal">
                                 <div class="boat-item__setup">
                                     <div class="boat-item__calendar">
-                                        <!-- <table>
-                                            
-                                            <thead>
-                                                <tr class="nav-nav">
-                                                    <th colspan="7">
-                                                        <span class="prev"><i
-                                                                class="fas fa-chevron-left"></i></span>
-                                                        <span class="next"><i
-                                                                class="fas fa-chevron-right"></i></span>
-                                                        <span class="month">September 2020</span>
-                                                    </th>
-                                                </tr>
-                                                <tr class="weekdays">
-                                                    <th>Mon</th>
-                                                    <th>Tue</th>
-                                                    <th>Wed</th>
-                                                    <th>Thu</th>
-                                                    <th>Fri</th>
-                                                    <th>Sat</th>
-                                                    <th>Sun</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="days"></tr>
-                                            </tbody>
-                                        </table> -->
                                         <div class="calendar">
                                             <div class="month">
                                               <i class="fas fa-angle-left prev"></i>
@@ -189,7 +161,7 @@
                                                 <div class="col-sm-8">
                                                     <div class="main-search_passengers">                                                      
                                                             <span class="minus "><i class="fas fa-minus-circle"></i></span>
-                                                            <input type="number" class="count"  name="qssty" value="1"  min="1" max="12" style="text-align: center;width: 100%;">
+                                                            <input type="number" class="count"  name="qssty" value="1"  min="1" max="12" style="text-align: center;width: 100%;height: 100%;">
                                                             <span class="plus"> <i class="fas fa-plus-circle"></i></span>                 
                                                     </div>
                                                 </div>
@@ -239,7 +211,7 @@
                                                     <span>Boat rental</span>
                                                 </div>
                                                 <div class="col-xl-6"><strong id="itemAmount">
-                                                        $<%=product[0].BoatPrice %> 
+                                                        $<%=Math.ceil(boats[0].BoatPrice) %> 
                                                     </strong>
                                                     <input type="hidden" name="usd" id="usd">
                                                 </div>
@@ -248,7 +220,7 @@
                                                 <div class="col-xl-6">
                                                     <span>Reservation Fee</span>
                                                 </div>
-                                                <div class="col-xl-6"><strong>
+                                                <div class="col-xl-6" ><strong id="Reservation">
                                                     $100
                                                     </strong>
                                                 </div>
@@ -258,8 +230,8 @@
                                                     <div class="col-xl-6">
                                                         <span>Sales Tax (21%)</span>
                                                     </div>
-                                                    <div class="col-xl-6"><strong>
-                                                        $<%= Math.ceil(product[0].BoatPrice/5) %> 
+                                                    <div class="col-xl-6"><strong id="Sales">
+                                                        $<%= Math.ceil(boats[0].BoatPrice/100*21) %> 
                                                         </strong>
                                                     </div>
                                                 </div>
@@ -268,8 +240,8 @@
                                                     <div class="col-xl-6">
                                                         <span>Total fee</span>
                                                     </div>
-                                                    <div class="col-xl-6 text-right"><strong>
-                                                        $<%=product[0].BoatPrice + Math.ceil(product[0].BoatPrice/5) +100 %> 
+                                                    <div class="col-xl-6 text-right"><strong  id="total">
+                                                        $<%=Math.ceil(boats[0].BoatPrice) + Math.ceil(boats[0].BoatPrice/100*21) +100 %> 
                                                         </strong>
                                                     </div>
                                             </div>
@@ -278,7 +250,7 @@
                                         
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <input type="hidden" name="boatID" value="<%=img.BoatID%>">
+                                                <input type="hidden" name="boatID" value="<%=boats[0].BoatID[0]%>">
                                                 <input type="submit" class="btn btn-primary" value="Request to Book" style=" font-size: 25px; background: #0751c2;
                                                 color: #fff;text-transform: uppercase; width: 100%;">
                                             </div>
@@ -317,7 +289,7 @@
                                         <h2 class="boat-list__item__title"><%= element.BoatName %></h2>
                                     </div>
                                     <div class="boat-list__item__location">
-                                    <i class="fas fa-map-marker-alt"></i> <%= element.DestinationName %>
+                                    <i class="fas fa-map-marker-alt"></i> <%= element.DestinationName[0] %>
                                     </div>
                                     <div class="boat-list__item__price">
                                     from <span><%= element.BoatPrice %> </span>
@@ -344,7 +316,7 @@
                                             <h2 class="boat-list__item__title"><%= element.BoatName %></h2>
                                         </div>
                                         <div class="boat-list__item__location">
-                                        <i class="fas fa-map-marker-alt"></i> <%= element.DestinationName %>
+                                        <i class="fas fa-map-marker-alt"></i> <%= element.DestinationName[0] %>
                                         </div>
                                         <div class="boat-list__item__price">
                                         from <span><%= element.BoatPrice %> </span>
@@ -362,18 +334,18 @@
             </div> -->
     </div>
 </div>
-<div class="hero-article">
+<div class="hero-article-toan ">
     <div class="row">
         <div class="col-xl-6 col-sm-12">
             <div class="hero-article-img" style="width:100%">
-                <img src="<%= location[0].DestinationPhoto   %> " alt="">
+                <img src="<%= boats[0].DestinationPhoto %> " alt="">
             </div>
         </div>
         <div class="col-xl-6 col-sm-12" style="    padding: 60px;">
-            <h1 style="    margin-bottom: 30px;"><%=location[0].DestinationCountry  %> </h1>
-            <p style="text-transform: lowercase; font-size: 10.0pt;
+            <h1 style="    margin-bottom: 30px;"><%=boats[0].DestinationCountry  %> </h1>
+            <p style="text-transform: lowercase; font-size: 11.0pt;
             font-family: Open Sans,sans-serif; color: black;">
-                <%= location[0].DestinationDescription %>
+                <%= boats[0].DestinationDescription %>
             </p>
             <!-- <p>One of the most visited cities in Europe, Barcelona is packed with things to see and do. From the UNESCO world heritage sites and amazing architecture of Anton Gaudi to numerous museums and art galleries, the capital of Catalonia definitely has a lot to offer to its visitors. You can also explore its coastline with a boat rental, admire famous paintings at the popular galleries, or just chill on the beach in the city. Here is a list of places that should be included in your travel itinerary in Barcelona.</p>
             <p><b>Beaches</b>- Exploring the Spanish coastline with a boat rental is an experience unlike any other and one of the places that you simply must include in your sailing itinerary is the lovely Ocata Beach. Nova Icaria Beach, is an ideal destination for couples and vacationers who are hoping to find some peace and quiet. Barceloneta Beach is definitely the most crowded beach in the city with plenty of opportunity for watersports, kite-surfing and windsurfing. Marbella Beach is an ideal destination if you are sailing in the Mediterranean with a luxury yacht charter. There are dozens of great bars, as well as opportunities for watersports including kayaking and windsurfing. Located on Bogatell beach, Vai Moana is one of the most popular beach bars in this part of the city. No beach vacation with a boat rental in Spain is complete without a visit to the popular CatWalk beach club. World-famous DJ’s perform here at the Barcelona’s CatWalk on a regular basis. If your idea of a perfect vacation in Barcelona includes relaxing treatments in the spa and spending the whole day by the pool, head out to Purobeach Barcelona beach club.</p>

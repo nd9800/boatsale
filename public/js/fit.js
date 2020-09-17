@@ -144,6 +144,7 @@ $(document).ready(function() {
      let fit_start_value = $('#fit_start').val();
      let fit_start_Number = parseInt(fit_start_value);
      let fit_end = $('#fit_end').val();
+     let browsers =$('#browsers').text().trim();
      let fit_end_Number = parseInt(fit_end);
      let boat_list = $('#boat-list');
      let pagination = $('#pagination');
@@ -152,15 +153,16 @@ $.ajax({
     url: 'http://localhost:5000/fit',
     dataType: "json",
     data: { fit_start_Number:fit_start_Number,
-        fit_end_Number:fit_end_Number},
+        fit_end_Number:fit_end_Number,
+        browsers:browsers},
     type: 'post',
     jsonpCallback: 'callback', 
     success: function (data) {
-        let value = data.currentPages.map(element =>{
         let page ='';
+        let value = data.currentPages.map(element =>{
             return `      
            <div class="col-sm-12 col-md-6 col-xl-3">
-               <a href="/location/product?name=${element.BoatName}  "class="boat-list_item">
+               <a href="/location/product?${element.BoatName}&browsers=${element.DestinationName[0]}&BoatID=${element.BoatID[0]} "class="boat-list_item">
                    <div class="boat-list_item_image">
                        <img src="${element.Boat_Image_1}" alt="">
                
@@ -175,10 +177,10 @@ $.ajax({
                            <h2 class="boat-list__item__title"> ${element.BoatName} </h2>
                        </div>
                        <div class="boat-list__item__location">
-                       <i class="fas fa-map-marker-alt"></i> ${element.DestinationName} 
+                       <i class="fas fa-map-marker-alt"></i> ${element.DestinationName[0]} 
                        </div>
-                       <div class="boat-list__item__fit">
-                       from <span>${element.Boatfit} </span>
+                       <div class="boat-list__item__price">
+                       from <span>${element.element.BoatPrice} </span>
                    </div>
                    </div>
            </a>  
@@ -197,6 +199,7 @@ $.ajax({
     let fit_start_value = $('#fit_start').val();
     let fit_start_Number = parseInt(fit_start_value);
     let fit_end = $('#fit_end').val();
+    let browsers =$('#browsers').text().trim();
     let fit_end_Number = parseInt(fit_end);
     let boat_list = $('#boat-list');
     let pagination = $('#pagination');
@@ -205,7 +208,8 @@ $.ajax({
    url: 'http://localhost:5000/fit',
    dataType: "json",
    data: { fit_start_Number:fit_start_Number,
-    fit_end_Number:fit_end_Number},
+    fit_end_Number:fit_end_Number,
+    browsers:browsers},
    type: 'post',
    jsonpCallback: 'callback', 
    success: function (data) {
@@ -220,7 +224,7 @@ $.ajax({
            
         return `      
        <div class="col-sm-12 col-md-6 col-xl-3">
-           <a href="/location/product?name=${element.BoatName}  "class="boat-list_item">
+           <a href="/location/product?${element.BoatName}&browsers=${element.DestinationName[0]}&BoatID=${element.BoatID[0]} "class="boat-list_item">
                <div class="boat-list_item_image">
                    <img src="${element.Boat_Image_1}" alt="">
            
@@ -235,10 +239,10 @@ $.ajax({
                        <h2 class="boat-list__item__title"> ${element.BoatName} </h2>
                    </div>
                    <div class="boat-list__item__location">
-                   <i class="fas fa-map-marker-alt"></i> ${element.DestinationName} 
+                   <i class="fas fa-map-marker-alt"></i> ${element.DestinationName[0]} 
                    </div>
-                   <div class="boat-list__item__fit">
-                   from <span>${element.Boatfit} </span>
+                   <div class="boat-list__item__price">
+                   from <span>${element.BoatPrice} </span>
                </div>
                </div>
        </a>  

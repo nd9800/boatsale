@@ -5,7 +5,6 @@
 }
 body{
     color: #666 !important;
-    font-family: 'Avenir Next',sans-serif !important;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -159,15 +158,15 @@ body{
     color: #14264a;
     font-size: 16px;
 }
-.book-form{
+#book-form{
     padding: 0 20px 30px;
 }
-.hero-article{
+.hero-article-toan{
     box-shadow: 0 10px 20px 0 rgba(21,39,75,.1);
   
 
 }
-.hero-article .row{
+.hero-article-toan .row{
     box-shadow: 0 10px 20px 0 rgba(21,39,75,.1);
   
 
@@ -277,7 +276,7 @@ body{
 .boat-detail{
     background-color: #fff;
 }
-.boat-detail__params{
+.boat-detail__params-fix{
     padding: 20px 0;
 }
 .param-group__title{
@@ -697,4 +696,37 @@ input[ type=range] #fit_end::-webkit-slider-thumb{
   .disabledbutton {
     pointer-events: none;
     opacity: 0.4;
+}
+.wth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count:focus{
+    color: blue;
+}
+/* .param-group .row{
+    white-space: nowrap; 
+    width: 400px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip; 
+} */
+.param-group-content .row .col-6:last-child{
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.param-group-content .row .col-6:last-child:hover {
+    overflow: visible;
+    white-space: normal;
+    
+   }
+.param-group-content{
+    width: 100%;
 }

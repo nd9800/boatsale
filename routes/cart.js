@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const db = require('../model/conect')
 const bodyParser = require('body-parser');
-
 router.use(bodyParser.urlencoded({ extended: true }));
 router.get("/cart", async function (req,res){
     let qssty = req.query.qssty;
@@ -13,6 +12,7 @@ router.get("/cart", async function (req,res){
     let usdInt = parseInt(usd)
     let boatID = req.query.boatID;
     let boatIDInt = parseInt(boatID)
+    console.log(boatIDInt)
     let SQL = `select *  from T2004E_GROUP1_Destination where DestinationName   in
      (select DestinationName   from T2004E_GROUP1_Boat where BoatID = ${boatIDInt})`
      let SQL2 = `select *  from T2004E_GROUP1_Boat_Image where BoatID = ${boatIDInt}`
@@ -44,9 +44,12 @@ router.get("/cart", async function (req,res){
         dates:date,
         usds:usdInt,
         boatIDs:boatID,
-        boats:boat.recordset[0],
-        boat2s:boat2.recordset[0]
+        boats:boat.recordsets[0],
+        boat2s:boat2.recordsets[0]
      //   boats:boat.recordsets[0]
     });
+});
+router.get("/request-complete",function (req,res){
+    res.render("request-complete");
 });
 module.exports = router;

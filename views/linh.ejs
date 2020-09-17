@@ -5,21 +5,25 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.css">
 <link rel="stylesheet" type="text/css" href="css/app.css">
+<link rel="stylesheet" href="css/datepicker.css">
+<link rel="stylesheet" type="text/css" href="css/nam1.css">
+
 </head>
 <body>
 <header id="header">
     <div class="header">
-        <div class="homepage-item" style="padding: 15px 15px 15px 0">
+        <div class="homepage-item" style="padding: 0px 15px 15px 0">
+            <div class="itemhead">
             <a href="#" id="logo" title="Boatsetter" alt="Boatsetter">
-                <div class="homepageleader">
-                    <div class="desktop-logo">
+                <div class="homepageleader" style="padding-top: 0px">
+                    <div class="desktop-logo" >
                         <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/logo-bs.svg?e2adjmklu9">
                     </div></div>
             </a>
-            <nav id="site" class="rightbox">
-                <a  class="nphone" href="#">
+            <nav id="site" class="rightbox" style="padding-top: 15px">
+                <a  class="nphone" href="tel:+1 (954) 715-4114">
                     <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/gfx/phone.svg?e2adjmklu9">
-                    <span> +1 (954) 715-4114 </span>
+                    <span style="color: white"> +1 (954) 715-4114 </span>
                 </a>
                 <form class="localform">
                     <div class="box1">
@@ -31,7 +35,7 @@
                         </button></div>
                 </form>
             </nav>
-            <br><br><br>
+        </div>
             <div class="wth">
                 <h1 class="text1">Your adventure starts here</h1>
                 <h2 class="text2">Find and rent the perfect boat. Captain Optional</h2>
@@ -43,45 +47,384 @@
                                 <!-- autocomplete="off" class="store-form" data-action="#" data-method="POST" novalidate="novalidate" -->
                                 <div style="width: 100%">
                     <span class="input-location">
-                <div class="input-group">
-                    <div class="input-pin">
+                        <div class="input-group">
+                    <div style="text-align: center;padding-top: 2px" class="input-pin">
                             <img class="pic1" src="img/pin.svg">
-                     
-                            <input list="browsers" type="text" class="search1" name="browsers" placeholder="Destination" >
-                            <datalist id="browsers">
-                                <option value="Dubai">Dubai</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </datalist>
-                
+                        <form action="#">
+                            <!-- <input list="browsers" type="text" class="search1" name="browsers" placeholder="Destination" > -->
+                            <select  id="browsers" class="search1" data-val="true" data-val-number="The field LocationId must be a number." data-val-required="The LocationId field is required." id="browsers" name="browsers" placeholder="Destination" required="required">
+                                <option selected disabled style="display:none">Destination</option>
+                                                                      <option value="11432">United States</option>
+<option value="Florida"><span>Florida</span></option>
+<option value="Miami">Miami</option>
+<option value="Canc&#250;n">Canc&#250;n</option>
+<option value="11436">Cape Town</option>
+<option value="11437">Ibiza</option>
+<option value="12177">Dubrovnik</option>
+<option value="12178">Mal&#233;</option>
+<option value="12179">Puerto Vallarta</option>
+<option value="12180">Cabo San Lucas</option>
+<option value="12181">Opština Budva</option>
+<option value="12182">Rovinj</option>
+<option value="12183">Road Town</option>
+<option value="12184">Nuevo Vallarta</option>
+<option value="12239">Saint Maries</option>
+<option value="12242">Dorado</option>
+<option value="12245">Nassau</option>
+<option value="12251">Messina</option>
+<option value="12256">Trapani</option>
+<option value="12261">Waverton</option>
+<option value="12264">Punta Cana</option>
+<option value="12281">Faro</option>
+<option value="12324">Leeward Settlement</option>
+<option value="12392">Ponce</option>
+<option value="12395">La Paz</option>
+<option value="12398">Montego Bay</option>
+<option value="12401">Castries</option>
+<option value="12404">Anse La Raye</option>
+<option value="12407">Gros Islet</option>
+<option value="12409">Calgary</option>
+<option value="12412">Platis Gialos</option>
+<option value="12417">Saint James</option>
+<option value="12422">Palermo</option>
+<option value="12425">Giardini Naxos</option>
+<option value="12428">Charlotte Amalie</option>
+<option value="12431">Tambon Ko Chang</option>
+<option value="12436">Santa Maria di Leuca</option>
+<option value="12441">San Foca</option>
+<option value="12450">Carri&#232;res-sous-Poissy</option>
+<option value="Glyfada">Glyfada</option>
+<option value="12485">Beaulieu-sur-Mer</option>
+<option value="12490">Parham Town</option>
+<option value="12497">Dubai</option>
+<option value="12500">Lake Como</option>
+<option value="12505">Mykonos</option>
+<option value="12537">British West Indies</option>
+<option value="12540">Viseisei</option>
+<option value="12550">Empuriabrava</option>
+<option value="12557">Playa del Carmen</option>
+<option value="12594">San Miguel de Cozumel</option>
+<option value="12607">Puerto Aventuras</option>
+<option value="12616">Qu&#233;bec</option>
+<option value="12630">Piraeus</option>
+<option value="12641">Rincon de Mar</option>
+<option value="12644">Villeneuve-Loubet</option>
+<option value="12667">Lefkada</option>
+<option value="12700">Corfu</option>
+<option value="12707">Tambon Chalong</option>
+<option value="12710">Bridgetown</option>
+<option value="12727">Estate Bovoni</option>
+<option value="12730">Punta Mita</option>
+<option value="12732">Bodrum</option>
+<option value="12735">&#214;l&#252;deniz</option>
+<option value="12738">Providenciales</option>
+<option value="12742">Olbia</option>
+<option value="12745">Col&#242;nia de Sant Jordi</option>
+<option value="12753">Holetown</option>
+<option value="12758">La Cruz de Huanacaxtle</option>
+<option value="12761">Pointe-&#224;-Pitre</option>
+<option value="12766">Guanacaste Province</option>
+<option value="12769">Playa Flamingo/Las Catalinas</option>
+<option value="12775">East End</option>
+<option value="12805">Vila Franca Do Campo</option>
+<option value="12811">Cascais</option>
+<option value="12823">Saraburi</option>
+<option value="12826">Tambon Ko Kaeo</option>
+<option value="12834">Santo Domingo</option>
+<option value="12850">Kuala Lumpur</option>
+<option value="12856">Mallorca</option>
+<option value="12871">Puerto Morelos</option>
+<option value="12880">Tambon Bo Put</option>
+<option value="12884">Thailand</option>
+<option value="12894">Koh Samui</option>
+<option value="12909">Tricase</option>
+<option value="12916">Andaluc&#237;a</option>
+<option value="12921">Estepona</option>
+<option value="12942">Saint-Tropez</option>
+<option value="12951">Barcelona</option>
+<option value="12958">Sant Adri&#224; de Bes&#242;s</option>
+<option value="12989">Vigo</option>
+<option value="13006">Venetian Road Settlement</option>
+<option value="13008">Murta Maria</option>
+<option value="13015">Pescara</option>
+<option value="13038">Anse Marcel</option>
+<option value="13059">Tulum</option>
+<option value="13066">Astypalaia</option>
+<option value="13069">Las Jarretaderas</option>
+<option value="13089">Alimos</option>
+<option value="13115">Paleo Faliro</option>
+<option value="13118">Fajardo</option>
+<option value="13122">Preveza</option>
+<option value="13152">Focene</option>
+<option value="13155">Cannes</option>
+<option value="13158">Cambrils</option>
+<option value="13206">Reggio Calabria</option>
+<option value="13214">La Romana</option>
+<option value="13238">Moss Town</option>
+<option value="13241">Gustavia</option>
+<option value="13261">Adeje</option>
+<option value="13279">Simpson Bay</option>
+<option value="13284">Kalymnos</option>
+<option value="13287">Bonifacio</option>
+<option value="13290">Phuket</option>
+<option value="13309">Saint-Jean-Cap-Ferrat</option>
+<option value="13314">Vodice</option>
+<option value="13328">Lozica</option>
+<option value="13334">St. Barthelemy</option>
+<option value="13371">Viareggio</option>
+<option value="13378">George Town</option>
+<option value="13387">Sukawati</option>
+<option value="13396">Z&#233; Doca</option>
+<option value="13400">Toronto</option>
+<option value="13501">Demajagua</option>
+<option value="13508">Funchal</option>
+<option value="13520">Bratislava</option>
+<option value="13526">Herradura</option>
+<option value="13545">Grand Cayman</option>
+<option value="13603">Mexico</option>
+<option value="13604">Italy</option>
+<option value="13605">Spain</option>
+<option value="13606">Croatia</option>
+<option value="13607">France</option>
+<option value="13608">Greece</option>
+<option value="13609">Portugal</option>
+<option value="13610">Montenegro</option>
+<option value="13612">Canada</option>
+<option value="13613">South Africa</option>
+<option value="13614">United Arab Emirates</option>
+<option value="13615">Maldives</option>
+<option value="13616">Colombia</option>
+<option value="13618">Fiji</option>
+<option value="13619">Australia</option>
+<option value="13620">Belize</option>
+<option value="13621">Puerto Rico</option>
+<option value="13622">Turks and Caicos</option>
+<option value="13623">British Virgin Islands</option>
+<option value="13624">Jamaica</option>
+<option value="13625">Saint Lucia</option>
+<option value="13626">Virgin Islands US</option>
+<option value="13627">Antigua &amp; Barbuda</option>
+<option value="13628">Bahamas</option>
+<option value="13629">Dominican Republic</option>
+<option value="13630">Barbados</option>
+<option value="13631">Turkey</option>
+<option value="13632">Guadeloupe</option>
+<option value="13633">Costa Rica</option>
+<option value="13634">Malaysia</option>
+<option value="13635">Indonesia</option>
+<option value="13636">Sardinia</option>
+<option value="13637">Cayman Islands</option>
+<option value="13638">Slovakia</option>
+<option value="13639">Brazil</option>
+<option value="13641">Madeira</option>
+<option value="13675">Mediterranean</option>
+<option value="13678">Jalisco</option>
+<option value="13679">Baja California Sur</option>
+<option value="13680">Quintana Roo</option>
+<option value="13681">New Providence</option>
+<option value="13682">Nayarit</option>
+<option value="13683">Balearic Islands</option>
+<option value="13684">Istria</option>
+<option value="13685">Tortola</option>
+<option value="13687">Amalfi</option>
+<option value="13688">Sorrento</option>
+<option value="13690">Positano</option>
+<option value="13691">Split</option>
+<option value="13692">Kaštel Gomilica</option>
+<option value="13693">Trogir</option>
+<option value="13694">Kraljevica</option>
+<option value="13695">La Altagracia Province</option>
+<option value="13699">Belize City</option>
+<option value="13700">Alberta</option>
+<option value="13702">Rest of the World </option>
+<option value="13704">The Caribbean</option>
+<option value="13706">Seget Donji</option>
+<option value="13707">Matulji</option>
+<option value="14639">Central America</option>
+<option value="14984">Alacant</option>
+<option value="14986">Milazzo</option>
+<option value="14987">Tonnarella</option>
+<option value="15015">Set&#250;bal</option>
+<option value="15053">Santorini</option>
+<option value="15242">Soller</option>
+<option value="15252">Port Adriano</option>
+<option value="15541">Honolulu</option>
+<option value="15922">Palm Beach</option>
+<option value="15942">Fort Lauderdale</option>
+<option value="15951">New York</option>
+<option value="16099">Chicago</option>
+<option value="16270">Naples</option>
+<option value="16358">Hawaii</option>
+<option value="16359">Maui</option>
+<option value="16484">Lake Tahoe</option>
+<option value="16487">San Diego</option>
+<option value="16533">Newport Beach</option>
+<option value="16706">Hamptons</option>
+<option value="16711">Palamos</option>
+<option value="16717">Eleuthera</option>
+<option value="16780">San Francisco</option>
+<option value="16908">Jac&#243;</option>
+<option value="16932">Lisbon</option>
+<option value="17007">Crete</option>
+<option value="17032">Lagos</option>
+<option value="17101">Washington DC</option>
+<option value="19206">Marbella</option>
+<option value="20009">San Jos&#233; del Cabo</option>
+<option value="20192">Marseille</option>
+<option value="20227">Airlie</option>
+<option value="20275">Los Sue&#241;os</option>
+<option value="20960">Palma</option>
+<option value="20961">Andratx</option>
+<option value="20962">Alc&#250;dia</option>
+<option value="20971">Martinique</option>
+<option value="21468">Idaho</option>
+<option value="27165">Tamarindo</option>
+<option value="27166">Papagayo/Culebra</option>
+<option value="28262">Corsica</option>
+<option value="28565">Ontario</option>
+<option value="28642">Saint Martin</option>
+<option value="28886">Menorca</option>
+<option value="28966">Ocho Rios</option>
+<option value="29241">Montezuma</option>
+<option value="29242">Playa Hermosa</option>
+<option value="29243">Quepos</option>
+<option value="29704">South of France</option>
+<option value="30093">Key West</option>
+<option value="30420">Cartagena</option>
+<option value="30886">India</option>
+<option value="30965">Saint Thomas</option>
+<option value="31000">Egypt</option>
+<option value="31001">Hurghada</option>
+<option value="31069">Anguilla</option>
+<option value="31087">Rio de Janeiro</option>
+<option value="31096">Algarve</option>
+<option value="31111">Richmond </option>
+<option value="31331">Germany</option>
+<option value="31446">Bacalar</option>
+<option value="31622">Paros, Greek Islands</option>
+<option value="31758">Mauritius</option>
+<option value="32435">Sicily</option>
+<option value="32942">Bermuda</option>
+<option value="33108">Monaco</option>
+<option value="33369">Puglia</option>
+<option value="33372">Monopoli </option>
+<option value="33527">North America</option>
+<option value="33684">Pollenca</option>
+<option value="33688">Ixtapa</option>
+<option value="33699">Ierapetra</option>
+<option value="33714">Abacos</option>
+<option value="33857">Chania</option>
+<option value="33868">Hampshire</option>
+<option value="33881">Cebu</option>
+<option value="34161">Windsor</option>
+<option value="34303"> Le Marin</option>
+<option value="34482">Pireas</option>
+<option value="34494">Tivat</option>
+<option value="34692">Panama</option>
+<option value="34854">Banderas Bay</option>
+<option value="35519">Marmaris</option>
+<option value="36119">Thessaloniki</option>
+<option value="36142">Grosseto </option>
+<option value="36143">Tuscany</option>
+<option value="36275">Split Riviera</option>
+<option value="36720">Paliouri</option>
+<option value="37035">Cadaques</option>
+<option value="37634">Agia Pelagia</option>
+<option value="37716">Panama City</option>
+<option value="38173">United Kingdom</option>
+<option value="38193">England</option>
+<option value="38194">Abersoch</option>
+<option value="38224">Playa Sosua</option>
+<option value="38393">French Riviera</option>
+<option value="38959">Vancouver</option>
+<option value="40977">Portofino</option>
+<option value="50904">Rhodes</option>
+<option value="54131">Peru </option>
+<option value="54132">Lima </option>
+<option value="54217">Malta </option>
+<option value="54232">Zakythos </option>
+<option value="54233">Zakynthos </option>
+<option value="54393">Punta Arenas </option>
+<option value="54401">Canary Islands </option>
+<option value="55203">Galapagos Islands</option>
+<option value="55806">Kos </option>
+<option value="55809">Spanish Wells </option>
+<option value="56286">Krabi</option>
+<option value="56492">Bali</option>
+<option value="56878">Pattaya</option>
+<option value="56944">Staniel Cay</option>
+<option value="57012">Athens </option>
+<option value="57122">Harbour Island</option>
+<option value="57362">Capri</option>
+<option value="57471">Playas del Coco</option>
+<option value="57523">Negril</option>
+<option value="57629">Šibenik</option>
+<option value="57658">Pakistan</option>
+<option value="57659">Karachi</option>
+<option value="57725">Istanbul </option>
+<option value="57903">Manarola </option>
+<option value="57910">Cinque Terre </option>
+<option value="57911">La Spezia</option>
+<option value="57912">Liguria </option>
+<option value="58091">Frejus </option>
+<option value="58201">Golfe Juan </option>
+<option value="58228">Saint John </option>
+<option value="58298">Netherlands </option>
+<option value="58299">Amsterdam </option>
+<option value="58346">San Pedro</option>
+<option value="58449">Isla Mujeres</option>
+<option value="58604">Rethymno</option>
+<option value="58650">Guatemala</option>
+<option value="58741">Heraklion </option>
+<option value="58787">Chania </option>
+<option value="58798">Capo d&#39;Orlando</option>
+<option value="58865">Vietnam</option>
+<option value="58866">Ho Chi Minh</option>
+<option value="58980">Kissamos</option>
+<option value="59246">Porto Cervo</option>
+<option value="59371">Girona </option>
+<option value="59372">Roses </option>
+<option value="59373">Costa Brava </option>
+<option value="59652">Exumas </option>
+<option value="59653">Georgetown</option>
+<option value="60043">Cannigione</option>
+<option value="60139">Sydney </option>
+<option value="60391">Placencia</option>
+<option value="60451">Puerto Quetzal</option>
+<option value="61328">West Palm Beach</option>
+<option value="61375">Tampa</option>
+<option value="61452">Villasimius</option>
+<option value="61575">Greenwich </option>
+<option value="61798">Bonaire </option>
+<option value="65513">Stintino </option>
+<option value="65842">Aruba </option>
+<option value="67368">Zimbabwe </option>
+<option value="74942">Newport </option>
+<option value="75842">Delray Beach</option>
+                            </select>
+                        </form>
                     </div>
-                      <div id="datepicker" class="input-group date  "  data-date-format="dd-mm-yyyy">
+                      <div id="datepicker" class="input-group" style="width:160px;border: solid thin lightgray"  >
                           <img class="pic1" src="img/calendar.svg">
-                       <input class="form-control" type="text" readonly="">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+<input data-toggle="datepicker" class="form-control search1" style="padding-top: 3px" type="text" method="get" placeholder="Date" />                          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 </div>
                     <div class="input-watch">
-            
+                     <div class="input-group">
                     <img class="pic1" src="img/watch.svg">
-                    <input  list="watchs" class="search2" name="Duration" placeholder="Duration">
-          <datalist id="watchs">
-                        <option value="Day Charter">Day Charter</option>
-                        <option value="Multe-Day Charter">Multe-Day Charter</option>
-                        <option value="Week-Charter">Week-Charter</option>
-              </datalist>
-                
+                    <select Title="Duration" class="search2" data-allow-clear="true" id="Duration" name="Duration" placeholder="Duration" tags="true">
+                                    <option value disabled selected style="display:none">Duration</option>
+                                    <option value='DayCharter'> Day Charter</option>
+                                    <option value='MultiDayCharter'>Multi-Day Charter</option>
+                                    <option value='WeekCharter'> Week Charter</option>
+                                </select>
+                     </div>
                 </div>
 
                     <div class="input-number">
-                       
-                            <img class="pic1" src="img/passengers.svg">
-                        <select class="search3" name="human">
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="13+">13+</option>
-
-                        </select>
-                    </div>
+                            <div class="input-group">
+                                <img class="pic1" src="img/passengers.svg">
+                                <select style="border: none" Title="2" class="form-control icn icn--passengers" data-allow-clear="true" id="PassengerCountMin" name="PassengerCountMin" tags="true"><option value='2'selected='selected'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='14'>13+ </option></select>
+                    </div></div>
             <button type="submit" class="btn btn--bold" id="search">
                         <img src="img/search.svg">
                     </button>
@@ -96,7 +439,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </header>
 <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.8608871013533712"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6816321685169271" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=26146940&amp;Ver=2&amp;mid=faa5eff8-16d4-a980-ad7b-a88b76d229e5&amp;sid=58721a29be654569065f529d8f94c2ae&amp;vid=a6c7df1d0ca2b04815aa34c54d36bbc9&amp;vids=0&amp;pi=-1079132682&amp;lg=vi-VN&amp;sw=2560&amp;sh=1440&amp;sc=24&amp;tl=Boat%20Rentals,%20Charter%20Boat%20Rentals,%20Yacht%20Rentals%20on%20Boatsetter&amp;p=https%3A%2F%2Fglobal.boatsetter.com%2Fen&amp;r=https%3A%2F%2Fglobal.boatsetter.com%2Fen%2Fmarketplace%2Fboats%2Fmoss-town&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=812163"></div>
@@ -158,159 +500,70 @@
     <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.vp9.webm?8rb6umielk" type="video/webm; codecs=vp9">
     <source src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/hp-video.h264.mp4?8rb6umielk" type="video/mp4; codecs=avc1.4D401E">
 </video>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $("#datepicker").datepicker({
-            autoclose: true,
-            todayHighlight: true
-        }).datepicker('update', new Date());
-    });
-</script>
-<div class="homepage-item" style="margin-top: calc(40% - 10px) ">
+
+<div class="homepage-item" style="margin-top: calc(20% - 10px) ">
     <div class="container">
-        <h3 class="text3">Featured destinations</h3>
+        <h3 class="text3" style="text-align: center">Featured destinations</h3>
+        <div class="row" style="margin-left: auto;margin-right: auto">
         <br><br>
         <div class="trends-list">
             <div style="display: block; width: 100%;">
                 <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Mediterranean</h4>
             </div>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
+            <% med.map(function (v){ %>
+                <a href="/location?browsers=<%= v.DestinationName  %> " class="link">
+                    <div class="box col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <img class="pic2" src="<%= v.DestinationPhoto %>">
+                            <p class="text4"><%= v.DestinationName %></p>
+                            <p class="text5"><%= v.DestinationCountry %></p>
+                            <p class="text6">FIND BOAT RENTALS</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-34.jpg">
-                        <p class="text4">Amalfi</p>
-                        <p class="text5">Italy</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            <% }) %>
         </div>
         <br>
         <div class="trends-list">
             <div style="display: block; width: 100%;">
                 <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">Rest of the World</h4>
             </div>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
+            <% rest.map(function (v){ %>
+                <a href="/location?browsers=<%= v.DestinationName  %> " class="link">
+                    <div class="box col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <img class="pic2" src="<%= v.DestinationPhoto %>">
+                            <p class="text4"><%= v.DestinationName %></p>
+                            <p class="text5"><%= v.DestinationCountry %></p>
+                            <p class="text6">FIND BOAT RENTALS</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
-            <a href="/location" class="link">
-                <div class="box col-md-3 col-sm-4 col-xs-12">
-                    <div class="item">
-                        <img class="pic2" src="img/hinh-nen-3d-cuc-chat-danh-cho-may-tinh-cua-ban-8.jpg">
-                        <p class="text4">Cape Town</p>
-                        <p class="text5">South Africa</p>
-                        <p class="text6">FIND BOAT RENTALS</p>
-                    </div>
-                </div>
-            </a>
+                </a>
+            <% }) %>
         </div>
+        <div class="trends-list">
+            <div style="display: block; width: 100%;">
+                <h4 style="margin: 35px 0 15px 0; padding: 0 14px; font-size: 28px; font-weight: 400;">The Caribbean</h4>
+            </div>
+            <% car.map(function (v){ %>
+                <a href="/location" class="link">
+                    <div class="box col-md-4 col-sm-6 col-xs-12">
+                        <div class="item">
+                            <img class="pic2" src="<%= v.DestinationPhoto %>">
+                            <p class="text4"><%= v.DestinationName %></p>
+                            <p class="text5"><%= v.DestinationCountry %></p>
+                            <p class="text6">FIND BOAT RENTALS</p>
+                        </div>
+                    </div>
+                </a>
+            <% }) %>
+        </div></div>
         <div class="homepage-item" style="margin-top: 5%">
             <h3 class="text3">How Boatsetter Works</h3>
         </div>
         <div class="homepage-item">
-            <div class="trends-list">
-                <ul class="list">
-                    <li class="col-md-4">
+            <div class="row">
+                    <div class="col-md-4">
                         <div>
                             <img class="pic3" src="img/search1.svg">
                         </div>
@@ -318,8 +571,8 @@
                             Find the right boat rental for your trip
                         </h5>
                         Make your vacation complete with the perfect boat rental
-                    </li>
-                    <li class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                         <div>
                             <img class="pic3" src="img/calendar1.svg">
                         </div>
@@ -327,8 +580,8 @@
                             Book your boat rental and pay online
                         </h5>
                         Booking a boat rental is easy and only takes a few minutes online; we handle all payments safely and securely
-                    </li>
-                    <li class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
                         <div >
                             <img class="pic4" src="img/boat.svg">
                         </div>
@@ -337,8 +590,9 @@
                             Enjoy your boating adventure
                         </h5>
                         Your boat is ready to go! All that's left is to your enjoy your water adventure
-                    </li>
-                </ul>
+                    </div>
+
+
             </div>
         </div>
         <button class="inquiry_btn btn btn-primary" id="bookingWidget_trigger" style="z-index: 300;">
@@ -348,63 +602,425 @@
         <script id="embender" data-url="https://booking.chartergenius.com//en/p/boatsetter/widget/home/inquiry" data-culture="en-US" src="https://d17nxorp0ub7gm.cloudfront.net/Frontend/dist/js/embed-enquiry.js">
         </script>
     </div>
-</>
-<footer>
+</div>
+
+
+<!--Footer-->
+<div class="footer" style="height:auto">
     <div class="container">
-        <div class="trends-list">
-            <div class="end1 col-sm-3 col-xs-12">
-                <img src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/logo-bs-water-blue.svg?e2adjmklu9" alt="Boatsetter" title="Boatsetter logo">
+        <div class="row">
+            <div class="col-sm-3">
+                <img class="img-responsive" src="https://d17nxorp0ub7gm.cloudfront.net/BoatSetter.Static/dist/app/assets/images/logo-bs-water-blue.svg?e2adjmklu9" alt="Boatsetter" title="Boatsetter logo">
                 <ul class="socialmedia">
-                    <li><a href="https://vi-vn.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/?lang=vi" target="_blank"><i class="fab fa-twitter"></i> </a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus"></i> </a></li>
+                    <li><a href="https://www.facebook.com/Boatsetter" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com/Boatsetter" target="_blank"><i class="fab fa-twitter"></i> </a></li>
+                    <li><a href="http://www.instagram.com/Boatsetter" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://plus.google.com/+Boatsetter" target="_blank"><i class="fab fa-google-plus"></i> </a></li>
                 </ul>
                 <p>©  Boatsetter 2020</p>
             </div>
             <div class="col-sm-9">
                 <div class="row">
-                    <div class="col-sm-3 col-xs-12">
+                    <div class="col-sm-3">
                         <h3>Legal</h3>
                         <ul>
-                            <li class="click1"><a class="text7" href="https://www.boatsetter.com/terms" target="_blank">Terms of Service</a></li>
-                            <li class="click1"><a class="text7" href="https://www.boatsetter.com/privacy" target="_blank">Privacy</a></li>
+                            <li><a href="https://www.boatsetter.com/terms" target="_blank">Terms of Service</a></li>
+                            <li><a href="https://www.boatsetter.com/privacy" target="_blank">Privacy</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3 col-xs-12">
+                    <div class="col-sm-3">
                         <h3>About</h3>
                         <ul>
-                            <li class="click1"><a class="text7" href="https://www.boatsetter.com/how-it-works" target="_blank">How It Works</a></li>
-                            <li class="click1"><a class="text7" href="https://www.boatsetter.com/about" target="_blank">About</a></li>
-                            <li class="click1"><a class="text7" href="https://www.boatsetter.com/press" target="_blank">Press</a></li>
-                            <li class="click1"><a class="text7" href="https://www.boatsetter.com/reviews" target="_blank">Reviews</a></li>
-                            <li class="click1"><a class="text7" href="/en/marketplace/landingpage/chartersoverview" target="_blank">Trips</a></li>
+                            <li><a href="https://www.boatsetter.com/how-it-works" target="_blank">How It Works</a></li>
+                            <li><a href="https://www.boatsetter.com/about" target="_blank">About</a></li>
+                            <li><a href="https://www.boatsetter.com/press" target="_blank">Press</a></li>
+                            <li><a href="https://www.boatsetter.com/reviews" target="_blank">Reviews</a></li>
+                            <li><a href="/en/p/boatsetter/marketplace/landingpage/chartersoverview" target="_blank">Trips</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3 col-xs-12">
+                    <div class="col-sm-3">
                         <h3>Help</h3>
                         <ul>
-                            <li class="click1"><a class="text7" href="http://support.boatbound.co/" target="_blank">Support</a></li>
-                            <li class="click1"><a class="text7" href="/en/marketplace/contact" target="_blank">Contact Us</a></li>
+                            <li><a href="http://support.boatbound.co/" target="_blank">Support</a></li>
+                            <li><a href="/en/p/boatsetter/marketplace/contact" target="_blank">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-3 col-xs-12">
+                    <div class="col-sm-3">
                         <h3>Popular Regions</h3>
                         <div class="promoted-regions">
                             <ul>
-                                <li class="click1"><a class="text7" href="/en/marketplace/boats/cancun">Cancún, Mexico</a></li>
-                                <li class="click1"><a class="text7" href="/en/marketplace/boats/ibiza">Ibiza, Balearic Islands</a></li>
-                                <li class="click1"><a class="text7" href="/en/marketplace/boats/puerto-vallarta">Puerto Vallarta, Banderas Bay</a></li>
-                                <li class="click1"><a class="text7" href="/en/marketplace/boats/barcelona">Barcelona, Spain</a></li>
-                                <li class="click1"><a class="text7" href="/en/marketplace/boats/cannes">Cannes, French Riviera</a></li>
-                                <li class="click1"><button class="accent see-all" style="background:none; border:none;">See all</button></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cancun">Cancún, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ibiza">Ibiza, Balearic Islands</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/puerto-vallarta">Puerto Vallarta, Banderas Bay</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/barcelona">Barcelona, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cannes">Cannes, French Riviera</a></li>
+                                <li><button class="accent see-all" style="background:none; border:none;">See all</button></li>
+                            </ul>
+                        </div>
+                        <div class="all-regions" style="display: none">
+                            <ul>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/united-states">United States, Central America</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/florida">Florida, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/miami">Miami, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cape-town">Cape Town, South Africa</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/dubrovnik">Dubrovnik, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/male">Malé, Maldives</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cabo-san-lucas">Cabo San Lucas, Baja California Sur</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/opstina-budva">Opština Budva, Montenegro</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/rovinj">Rovinj, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/road-town">Road Town, British Virgin Islands</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/nuevo-vallarta">Nuevo Vallarta, Puerto Vallarta</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-maries">Saint Maries, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/dorado">Dorado, Puerto Rico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/nassau">Nassau, New Providence</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/messina">Messina, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/trapani">Trapani, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/waverton">Waverton, Australia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/punta-cana">Punta Cana, Dominican Republic</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/faro">Faro, Algarve</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/leeward-settlement">Leeward Settlement, Turks and Caicos</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ponce">Ponce, Puerto Rico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/la-paz">La Paz, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/montego-bay">Montego Bay, Jamaica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/castries">Castries, Saint Lucia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/anse-la-raye">Anse La Raye, Saint Lucia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/gros-islet">Gros Islet, Saint Lucia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/calgary">Calgary, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/platis-gialos">Platis Gialos, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-james">Saint James, Barbados</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/palermo">Palermo, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/giardini-naxos">Giardini Naxos, Sicily</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/charlotte-amalie">Charlotte Amalie, Virgin Islands US</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tambon-ko-chang">Tambon Ko Chang, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/santa-maria-di-leuca">Santa Maria di Leuca, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/san-foca">San Foca, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/carrieres-sous-poissy">Carrières-sous-Poissy, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/glyfada">Glyfada, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/beaulieu-sur-mer">Beaulieu-sur-Mer, French Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/parham-town">Parham Town, British Virgin Islands</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/dubai">Dubai, United Arab Emirates</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/laglio">Lake Como, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/mykonos">Mykonos, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/british-west-indies">British West Indies, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/viseisei">Viseisei, Fiji</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/empuriabrava">Empuriabrava, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/playa-del-carmen">Playa del Carmen, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/san-miguel-de-cozumel">San Miguel de Cozumel, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/puerto-aventuras">Puerto Aventuras, Playa del Carmen</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/quebec">Québec, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/piraeus">Piraeus, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/rincon-de-mar">Rincon de Mar, Colombia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/villeneuve-loubet">Villeneuve-Loubet, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/lefkada">Lefkada, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/corfu">Corfu, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tambon-chalong">Tambon Chalong, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bridgetown">Bridgetown, Barbados</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/estate-bovoni">Estate Bovoni, Virgin Islands US</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/punta-mita">Punta Mita, Puerto Vallarta</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bodrum">Bodrum, Turkey</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/oludeniz">Ölüdeniz, Turkey</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/providenciales">Providenciales, Turks and Caicos</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/olbia">Olbia, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/colonia-de-sant-jordi">Colònia de Sant Jordi, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/holetown">Holetown, Barbados</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/la-cruz-de-huanacaxtle">La Cruz de Huanacaxtle, Puerto Vallarta</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/pointe-a-pitre">Pointe-à-Pitre, Guadeloupe</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/guanacaste-province">Guanacaste Province, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/playa-flamingo">Playa Flamingo/Las Catalinas, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/east-end">East End, Virgin Islands US</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/vila-franca-do-campo">Vila Franca Do Campo, Portugal</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cascais">Cascais, Portugal</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tambl-tlingchan">Saraburi, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tambon-ko-kaeo">Tambon Ko Kaeo, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/santo-domingo">Santo Domingo, Dominican Republic</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/kuala-lumpur">Kuala Lumpur, Malaysia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/palma">Mallorca, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/puerto-morelos">Puerto Morelos, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tambon-bo-put">Tambon Bo Put, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/thailand">Thailand, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ko-samui">Koh Samui, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tricase">Tricase, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/andalucia">Andalucía, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/estepona">Estepona, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-tropez">Saint-Tropez, French Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/sant-adria-de-besos">Sant Adrià de Besòs, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/vigo">Vigo, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/venetian-road-settlement">Venetian Road Settlement, Turks and Caicos</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/murta-maria">Murta Maria, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/pescara">Pescara, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/anse-marcel">Anse Marcel, Virgin Islands US</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tulum">Tulum, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/astypalaia">Astypalaia, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/las-jarretaderas">Las Jarretaderas, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/alimos">Alimos, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/paleo-faliro">Paleo Faliro, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/fajardo">Fajardo, Puerto Rico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/preveza">Preveza, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/focene">Focene, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cambrils">Cambrils, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/reggio-calabria">Reggio Calabria, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/la-romana">La Romana, Dominican Republic</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/moss-town">Moss Town, Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/gustavia">Gustavia, St. Barthelemy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/adeje">Adeje, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/simpson-bay">Simpson Bay, Saint Martin</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/kalymnos">Kalymnos, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bonifacio">Bonifacio, Sardinia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/phuket">Phuket, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-jean-cap-ferrat">Saint-Jean-Cap-Ferrat, French Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/vodice">Vodice, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/lozica">Lozica, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/st-barthelemy">St. Barthelemy, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/viareggio">Viareggio, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/george-town">George Town, Cayman Islands</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/sukawati">Sukawati, Indonesia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ze-doca">Zé Doca, Brazil</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/toronto">Toronto, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/demajagua">Demajagua, Puerto Rico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/funchal">Funchal, Madeira</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bratislava">Bratislava, Slovakia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/herradura">Herradura, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/grand-cayman">Grand Cayman, Cayman Islands</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/mexico">Mexico, Central America</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/italy">Italy, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/spain">Spain, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/croatia">Croatia, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/france">France, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/greece">Greece, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/portugal">Portugal, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/montenegro">Montenegro, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/canada">Canada, North America</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/south-africa">South Africa, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/united-arab-emirates">United Arab Emirates, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/maldives">Maldives, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/colombia">Colombia, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/fiji">Fiji, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/australia">Australia, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/belize">Belize, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/puerto-rico">Puerto Rico, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/turks-and-caicos">Turks and Caicos, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/british-virgin-islands">British Virgin Islands, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/jamaica">Jamaica, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-lucia">Saint Lucia, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/virgin-islands-us">Virgin Islands US, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/antigua-barbuda">Antigua &amp; Barbuda, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bahamas">Bahamas, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/dominican-republic">Dominican Republic, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/barbados">Barbados, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/turkey">Turkey, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/guadeloupe">Guadeloupe, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/costa-rica">Costa Rica, Central America</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/malaysia">Malaysia, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/indonesia">Indonesia, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/corsica">Sardinia, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cayman-islands">Cayman Islands, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/slovakia">Slovakia, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/brazil">Brazil, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/madeira">Madeira, Portugal</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/mediterranean">Mediterranean, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/jalisco">Jalisco, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/baja-california-sur">Baja California Sur, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/quintana-roo">Quintana Roo, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/new-providence">New Providence, Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/nayarit">Nayarit, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/balearic-islands">Balearic Islands, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/istria">Istria, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tortola">Tortola, British Virgin Islands</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/amalfi">Amalfi, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/sorrento">Sorrento, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/positano">Positano, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/split">Split, Split Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/kastel-gomilica">Kaštel Gomilica, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/trogir">Trogir, Split Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/kraljevica">Kraljevica, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/la-altagracia-province">La Altagracia Province, Dominican Republic</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/belize-city">Belize City, Belize</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/alberta">Alberta, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/rest-of-the-world-">Rest of the World , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/the-caribbean">The Caribbean, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/seget-donji">Seget Donji, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/matulji">Matulji, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/central-america">Central America, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/alacant">Alacant, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/milazzo">Milazzo, Sicily</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tonnarella">Tonnarella, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/setubal">Setúbal, Lisbon</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/santorini">Santorini, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/soller">Soller, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/port-adriano">Port Adriano, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/honolulu">Honolulu, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/palm-beach">Palm Beach, Florida</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/fort-lauderdale">Fort Lauderdale, Florida</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/new-york">New York, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/chicago">Chicago, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/naples">Naples, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/hawai-i">Hawaii, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/maui">Maui, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/lake-tahoe-16484">Lake Tahoe, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/san-diego">San Diego, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/newport-beach-16533">Newport Beach, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/hamptons">Hamptons, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/palamos">Palamos, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/eleuthera">Eleuthera, Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/san-francisco">San Francisco, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/jaco">Jacó, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/lisbon">Lisbon, Portugal</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/crete">Crete, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/lagos">Lagos, Algarve</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/washington-dc">Washington DC, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/marbella">Marbella, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/san-jose-del-cabo">San José del Cabo, Cabo San Lucas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/marseille">Marseille, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/airlie">Airlie, Australia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/los-suenos">Los Sueños, Jacó</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/palma-20960">Palma, Mallorca</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/andratx-20961">Andratx, Mallorca</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/alcudia">Alcúdia, Mallorca</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/martinique">Martinique, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/idaho">Idaho, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tamarindo">Tamarindo, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/papagayo">Papagayo/Culebra, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/corsica-28262">Corsica, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ontario">Ontario, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-martin">Saint Martin, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/menorca">Menorca, Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ocho-rios">Ocho Rios, Jamaica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/montezuma">Montezuma, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/playa-hermosa">Playa Hermosa, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/quepos">Quepos, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/south-of-france">South of France, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/key-west">Key West, Florida</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cartagena">Cartagena, Colombia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/india">India, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-thomas">Saint Thomas, Virgin Islands US</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/egypt">Egypt, United States</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/hurghada">Hurghada, Egypt</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/anguilla">Anguilla, The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/rio-de-janeiro">Rio de Janeiro, Brazil</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/algarve">Algarve, Portugal</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/richmond">Richmond , Vancouver</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/germany">Germany, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bacalar">Bacalar, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/paros-greek-islands">Paros, Greek Islands, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/mauritius-island">Mauritius, Rest of the World </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/sicily">Sicily, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bermuda-32942">Bermuda, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/monaco-33108">Monaco, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/puglia-33369">Puglia, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/monopoli-33372">Monopoli , Puglia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/north-america-33527">North America, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/pollenca-33684">Pollenca, Mallorca</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ixtapa-33688">Ixtapa, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ierapetra-33699">Ierapetra, Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/abacos-33714">Abacos, Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/chania-33857">Chania, Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/hampshire-33868">Hampshire, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cebu-33881">Cebu, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/windsor-34161">Windsor, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/le-marin-34303"> Le Marin, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/pireas-34482">Pireas, Athens </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tivat-34494">Tivat, Montenegro</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/panama-34692">Panama, Central America</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/banderas-bay-34854">Banderas Bay, Mexico</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/marmaris-35519">Marmaris, Turkey</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/thessaloniki-36119">Thessaloniki, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/grosseto-36142">Grosseto , Tuscany</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tuscany-36143">Tuscany, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/split-riviera-36275">Split Riviera, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/paliouri-36720">Paliouri, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cadaques-37035">Cadaques, Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/agia-pelagia-37634">Agia Pelagia, Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/panama-city-37716">Panama City, Panama</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/united-kingdom-38173">United Kingdom, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/england-38193">England, United Kingdom</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/abersoch-38194">Abersoch, England</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/playa-sosua-38224">Playa Sosua, Dominican Republic</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/french-riviera-38393">French Riviera, France</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/vancouver-38959">Vancouver, Canada</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/portofino-40977">Portofino, Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/rhodes-50904">Rhodes, Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/peru-54131">Peru , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/lima-54132">Lima , Peru </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/malta-54217">Malta , Mediterranean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/zakythos-54232">Zakythos , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/zakynthos-54233">Zakynthos , Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/punta-arenas-54393">Punta Arenas , Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/canary-islands-54401">Canary Islands , Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/galapagos-islands">Galapagos Islands, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/kos-55806">Kos , Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/spanish-wells-55809">Spanish Wells , Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/krabi-56286">Krabi, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bali-56492">Bali, Indonesia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/pattaya-56878">Pattaya, Thailand</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/staniel-cay-56944">Staniel Cay, Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/athens-57012">Athens , Greece</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/harbour-island-57122">Harbour Island, Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/capri-57362">Capri, Amalfi</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/playas-del-coco-57471">Playas del Coco, Costa Rica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/negril-57523">Negril, Jamaica</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/sibenik-57629">Šibenik, Croatia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/pakistan-57658">Pakistan, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/karachi-57659">Karachi, Pakistan</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/istanbul-57725">Istanbul , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/manarola-57903">Manarola , Cinque Terre </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cinque-terre-57910">Cinque Terre , Liguria </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/la-spezia-57911">La Spezia, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/liguria-57912">Liguria , Italy</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/frejus-58091">Frejus , French Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/golfe-juan-58201">Golfe Juan , French Riviera</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/saint-john-58228">Saint John , Virgin Islands US</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/netherlands-58298">Netherlands , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/amsterdam-58299">Amsterdam , Netherlands </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/san-pedro-58346">San Pedro, Belize</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/isla-mujeres-58449">Isla Mujeres, Cancún</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/rethymno-58604">Rethymno, Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/guatemala-58650">Guatemala, Central America</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/heraklion-58741">Heraklion , Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/chania-58787">Chania , Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/capo-d-orlando-58798">Capo d'Orlando, Sicily</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/vietnam-58865">Vietnam, </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/ho-chi-minh-58866">Ho Chi Minh, Vietnam</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/kissamos-58980">Kissamos, Crete</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/porto-cervo-59246">Porto Cervo, Sardinia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/girona-59371">Girona , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/roses-59372">Roses , Costa Brava </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/costa-brava-59373">Costa Brava , Spain</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/exumas-59652">Exumas , Bahamas</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/georgetown-59653">Georgetown, Exumas </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/cannigione-60043">Cannigione, Sardinia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/sydney-60139">Sydney , Australia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/placencia-60391">Placencia, Belize</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/puerto-quetzal-60451">Puerto Quetzal, Guatemala</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/west-palm-beach-61328">West Palm Beach, Palm Beach</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/tampa-61375">Tampa, Florida</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/villasimius-61452">Villasimius, Sardinia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/greenwich-61575">Greenwich , New York</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/bonaire-61798">Bonaire , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/stintino-65513">Stintino , Sardinia</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/aruba-65842">Aruba , The Caribbean</a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/zimbabwe-67368">Zimbabwe , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/newport-74942">Newport , </a></li>
+                                <li><a href="/en/p/boatsetter/marketplace/boats/delray-beach-75842">Delray Beach, Florida</a></li>
+                                <li><button class="accent see-less" style="background:none; border:none;">See less</button></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div></div>
-</footer>
+
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/validator.js"></script>
+<script type="text/javascript" src="js/datepicker.js"></script>
+<script>
+    $('[data-toggle="datepicker"]').datepicker({
+        format: 'mm-dd-yyyy'
+    });
+    </script>
 </body>
 
 </html>

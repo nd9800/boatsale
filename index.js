@@ -7,9 +7,9 @@ const expressLayouts = require('express-ejs-layouts');
 //config các file static
 app.use(express.static("public"));
 // rút ngắn đường link 
-app.use(express.static(__dirname+'pullic/css'));
-app.use(express.static(__dirname+'pullic/js'));
-app.use(express.static(__dirname+'pullic/img'));
+app.use(express.static(__dirname+'public/css'));
+app.use(express.static(__dirname+'public/js'));
+app.use(express.static(__dirname+'public/img'));
 
 
 
@@ -44,6 +44,8 @@ app.set('layout','./layout/layout');
 app.use('/',require('./routes/linh'));  
 app.use('/',require('./routes/marketplace'));
 app.use('/',require('./routes/cart'));
+app.use('/',require('./routes/terms'));
+
 
 const PORT = process.env.PORT || 5000;
 
