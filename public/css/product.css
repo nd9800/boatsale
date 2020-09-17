@@ -206,3 +206,13 @@ th{
     color: rgba(21,39,75,.7);
     line-height: 1.88;
 }
+.hero-article-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    margin-top: 20%;
+}
+.Destination_Des p{
+    padding: 0 !important;
+}
