@@ -35,7 +35,9 @@
         <div class="row">
             <div class="col-md-8 col-sm-12 col-xs-12 boat-detail__body boat-detail-main pull-right">
                 <div class="boat-detail_description">
-                        <p style="    text-transform: lowercase;"><%=boats[0].BoatDescription  %> </p>
+                        <div class="Destination_Des">
+                            <%- boats[0].BoatDescription  %>
+                        </div>
                         <div class="boat-detail__params-fix">              
                             <div class="row">
                                 <div class="col-xl-6 col-sm-12">
@@ -343,7 +345,7 @@
         </div>
         <div class="col-xl-6 col-sm-12" style="    padding: 60px;">
             <h1 style="    margin-bottom: 30px;"><%=boats[0].DestinationCountry  %> </h1>
-            <div class="Destination_Des" style="text-transform: lowercase; font-size: 11.0pt;
+            <div class="Destination_Des" style="font-size: 11.0pt;
             font-family: Open Sans,sans-serif; color: black;">
                 <%- boats[0].DestinationDescription %>
             </div>
