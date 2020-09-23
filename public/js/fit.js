@@ -180,7 +180,7 @@ $.ajax({
                        <i class="fas fa-map-marker-alt"></i> ${element.DestinationName[0]} 
                        </div>
                        <div class="boat-list__item__price">
-                       from <span>${element.element.BoatPrice} </span>
+                       from <span>${element.BoatPrice} </span>
                    </div>
                    </div>
            </a>  

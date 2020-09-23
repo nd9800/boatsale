@@ -24,8 +24,10 @@ router.get("/location/product", async (req,res) =>{
   INNER JOIN T2004E_GROUP1_Boat_Info ON T2004E_GROUP1_Boat_Info.BoatID = ${BoatIDNumber} AND T2004E_GROUP1_Boat.BoatID = ${BoatIDNumber})
   INNER JOIN T2004E_GROUP1_Boat_Image ON T2004E_GROUP1_Boat_Image.BoatID = ${BoatIDNumber})
   INNER JOIN T2004E_GROUP1_Boat_Feature ON T2004E_GROUP1_Boat_Feature.BoatID = ${BoatIDNumber})`;
+  let SQL3 = `select * from T2004E_GROUP1_Destination `
   let boat =null;
   let boat2 =null;
+  let locationHeader =null;
   
   await  db.query(SQL1).then(result =>{
     boat = result;
@@ -34,8 +36,11 @@ router.get("/location/product", async (req,res) =>{
   })
   await  db.query(SQL2).then(result =>{
     boat2 = result;
-  
-  
+  }).catch(err =>{
+      console.log(err);
+  })
+  await  db.query(SQL3).then(result =>{
+    locationHeader = result;
   }).catch(err =>{
       console.log(err);
   })
@@ -62,7 +67,8 @@ await  res.render('product',{
       ramdoms:ramdom,
       name:names,
       totals:total,
-      boats : boat2.recordsets[0]
+      boats : boat2.recordsets[0],
+      locations:locationHeader.recordsets[0]
   })
 })
 router.get('/location/:id?', async (req,res) =>{
@@ -73,8 +79,10 @@ router.get('/location/:id?', async (req,res) =>{
     INNER JOIN T2004E_GROUP1_Boat_Info ON T2004E_GROUP1_Boat.BoatID = T2004E_GROUP1_Boat_Info.BoatID)
     INNER JOIN T2004E_GROUP1_Boat_Image ON T2004E_GROUP1_Boat_Image.BoatID = T2004E_GROUP1_Boat_Info.BoatID)`;
   let SQL2 =`select * from T2004E_GROUP1_Destination where  DestinationName like ('%${location}%')` ;
+  let SQL3 = `select * from T2004E_GROUP1_Destination `
   let boat = null;
   let boat2 =null;
+  let locationHeader =null;
 await  db.query(SQL1).then(result =>{
   boat = result;
 }).catch(err =>{
@@ -82,6 +90,12 @@ await  db.query(SQL1).then(result =>{
 })
 await  db.query(SQL2).then(result =>{
   boat2 = result
+
+}).catch(err =>{
+    console.log(err);
+})
+await  db.query(SQL3).then(result =>{
+  locationHeader = result
 
 }).catch(err =>{
     console.log(err);
@@ -97,7 +111,8 @@ await  db.query(SQL2).then(result =>{
       product:currentPost,
       page:totalPage,
       currentPages:currentPage,
-      boat3s:boat2.recordsets[0]
+      boat3s:boat2.recordsets[0],
+      locations:locationHeader.recordsets[0]
     })
   
 })
@@ -113,7 +128,6 @@ router.post('/demo',async (req,res) =>{
   let contentJson = null;
   let price_start_Number = req.body.price_start_Number;
   let price_end_Number = req.body.price_end_Number;
-  console.log(typeof browsers)
   await db.query(SQL1).then(result =>{
     contentJson =  result.recordsets[0]
     let renger = contentJson.filter((array,index) =>{
@@ -154,7 +168,7 @@ router.post('/fit',async (req,res) =>{
   await db.query(SQL1).then(result =>{
     contentJson =  result.recordsets[0]
     let renger = contentJson.filter((array,index) =>{
-      if ( fit_end_Number >= array.InfoLength && array.InfoLength >= fit_start_Number) {
+      if ( fit_end_Number >= array.InfoPassengerCapacity && array.InfoPassengerCapacity >= fit_start_Number) {
           return true
       }
     });

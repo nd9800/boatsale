@@ -219,6 +219,8 @@ $(document).ready(function(){
     
 
  $(document).ready(function(){
+
+ 
      let Usds = $('#itemAmount');
      let Usd = $('#itemAmount').text().trim()
      let UsdLength = Usd.length
@@ -240,8 +242,7 @@ $(document).ready(function(){
      let TotalInt = parseInt(Total.slice(1,TotalLength))
 
      let FullDay = $('#fullday')
-  
-    $('select.form-control').change(()=>{
+    $('select.form-control').change(function PriceValue(){
         $('#type option:selected').each(function() {
             let value =  $(this).val()
             function setvalue(value) {
@@ -268,12 +269,14 @@ $(document).ready(function(){
                 value = 2
                 setvalue(value)
             }
+         
         });
-        const usd =$('#usd');
-        const itemAmount =$('#itemAmount');
-        const end = itemAmount.text().trim().length
-        usd.val(parseInt(itemAmount.text().trim().slice(1,end)))
-        console.log(usd.val())
+  
     })
-
+    // sửa đổi đề vào trong hàm onload
+    const usd =$('#usd');
+    const itemAmount =$('#itemAmount');
+    const end = itemAmount.text().trim().length
+    usd.val(parseInt(itemAmount.text().trim().slice(1,end)))
   });
+

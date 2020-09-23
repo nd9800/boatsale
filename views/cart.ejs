@@ -1,20 +1,11 @@
 <main class="section">
     <div class="container main-box">
         <div class="row">
-<<<<<<< HEAD
             <div class="col-md-8 col-sm-12  infopage__floating">
                 <h1 class="title" style="text-align:center;padding-bottom:70px">
                     Complete Your Booking
                 </h1>
                 <label style="padding:30px 0;font-size:25px;opacity:0.8">1. Your Information</label>
-=======
-            <div class="col-md-9 col-sm-12 col-xs-12  infopage__floating">
-                <h1 class="title" >
-                    SEND US YOUR REQUEST
-                </h1><br/>
-                <h2>We will contact you shortly !</h2>
-                <label style="padding:20px 0;font-size:25px;opacity:0.8">Your Information</label>
->>>>>>> 042770e5c930fcde0cef1b84f5023705604ee485
                 <div class="main-content">
                     <form data-toggle="validator" role="form" action="/request-complete" method="post" data-error="Wrong Input, Please re-enter" >
 
@@ -96,12 +87,12 @@
             </div>
             <div class="col-md-4 col-sm-12  bookingpage__floating">
                 <h1 class="cart-title" style="text-align: center;">Complete Your Booking Request</h1>
-                <img class = "img-responsive"  src="<%=boat2s.Boat_Image_1 %> ">
-                <h2></h2>
+                <div class="img-responsive">   <img src="<%=boat2s[0].Boat_Image_1 %> "></div>
+                <h2><%=boat3s[0].BoatName%></h2>
                 <h3>
                     <%=boats.DestinationName  %> ,<%=boats.DestinationCountry  %> , <%=boats.DestinationArea %>
                 </h3>
-                <div style="padding: 0 21px;">
+                <div>
                     <div class="row prop">
                         <div class="col-xl-6 label-text">Date</div>
                         <div class="col-xl-6  text-right"><%=dates  %> </div>
@@ -118,7 +109,7 @@
                 <div class="booking-totals-summary-container" style="min-height: 100px;">
                     <div class="row prop" >
                         <div class="col-xl-6 label-text">Boat Rental</div>
-                        <div class="col-xl-6  text-right" style="font-weight:600">$<%=usds  %></div>
+                        <div class="col-xl-6  text-right" style="font-weight:600">$<%=usds%></div>
                     </div>
                     <div class="row prop">
                         <div class="col-xl-6 label-text">Reservation Fee</div>

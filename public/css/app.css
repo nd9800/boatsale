@@ -76,11 +76,11 @@ body{
     margin-top: 100px;
     text-align: center;
     font-size: 350%;
-    color: silver;
+    color: lightgray;
 }
 .text2{
     text-align: center;
-    color: silver;
+    color: lightgray;
 }
 .main-search{
     background: #fff;
@@ -195,7 +195,7 @@ body{
     width:100%;
 }
 .text3{
-    color: #474545;
+    color: black;
     font-size: 300%;
     text-align: center;
 }

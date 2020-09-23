@@ -112,7 +112,7 @@ textarea::placeholder
 }
 #phone
 {
-    width:436.25px;
+    width:100%
 }
 .complete-box
 {
@@ -258,4 +258,36 @@ textarea:focus, input:focus {
 .menu-terms a:hover
 {
     color: #707070;
+}
+.bookingpage__floating{
+    z-index: 9;
+    float: right;
+    padding: 0 45px 20px;
+    border-radius: 4px;
+    color: #000;
+    border: solid 1px #dadedf;
+    border-top: 3px solid #0751c2;
+    background-color: #fff;
+}
+.bookingpage__floating h1 {
+    font-weight: 500;
+    font-size: 29px;
+    padding: 20px 0 25px;
+    text-align: center;
+}
+.bookingpage__floating h2{
+    font-weight: 600;
+    font-size: 17px;
+    padding: 12px 0;
+    text-align: center;
+}
+.bookingpage__floating h3 {
+    font-weight: 300;
+    font-size: 16px;
+    padding: 12px 0;
+    color: #999;
+    text-align: center;
+}
+.iti {
+    width: 100%;
 }

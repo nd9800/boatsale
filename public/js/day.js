@@ -55,22 +55,39 @@ const renderCalendar = () => {
     days += `<div class="prev-date disabledbutton">${prevLastDay - x + 1}</div>`;
   }
 
+  // for (let i = 1; i <= lastDay; i++) {
+  //   if (
+  //     i === new Date().getDate() &&
+  //     date.getMonth() === new Date().getMonth()
+  //   ) {
+  //     days += `<div class="active">${i}</div>`;
+    
+  //   } else {
+  //     days += `<div>${i}</div>`;
+  //   }
+  // }
   for (let i = 1; i <= lastDay; i++) {
     if (
       i === new Date().getDate() &&
       date.getMonth() === new Date().getMonth()
-    ) {
+    ){
       days += `<div class="active">${i}</div>`;
     
-    } else {
-      days += `<div>${i}</div>`;
+    } else if (i <= new Date().getDate() &&
+    date.getMonth() === new Date().getMonth()) {
+        days += `<div class=disabledbutton>${i}</div>`;
+      }else if(date.getMonth()<new Date().getMonth()){
+        days += `<div class=disabledbutton>${i}</div>`;
+      } else {
+        days += `<div>${i}</div>`;
     }
+      
   }
-
   for (let j = 1; j <= nextDays; j++) {
     days += `<div class="next-date disabledbutton" >${j}</div>`;
-    monthDays.innerHTML = days;
+
   }
+  monthDays.innerHTML = days;
 };
 
 document.querySelector(".prev").addEventListener("click", () => {
@@ -108,5 +125,5 @@ for (let index = 0; index < bg.length; index++) {
 }
 
 }
- renderCalendar();
+renderCalendar();
 renderactive()
